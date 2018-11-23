@@ -13,7 +13,7 @@
 2. Open `MPinSDK/MPinSDK.xcodeproj`
 3. Select *Product->Build* from the Xcode menu.
 
-For further details, see [MIRACL MFA Mobile SDK for iOS Documentation](https://devdocs.trust.miracl.cloud/en/mobile-sdk-instructions/ios)
+For further details, see [MIRACL MFA Mobile SDK for iOS Documentation](https://devdocs.trust.miracl.cloud/#/mobile-sdk-instructions/)
 
 ## iOS SDK API for Milagro  (`MPin` class)
 
@@ -590,4 +590,4 @@ The returned `MpinStatus` could be one of:
 * `FLOW_ERROR` - The provided `user` doesn't have the ability to sign documents.
 * `CRYPTO_ERROR` - an error has occurred at the crypto layer of the SDK. Call the status's `errorMessage` property for more info.
 
-For more information you can refer to the [SDK Core](https://github.com/miracl/incubator-milagro-mfa-sdk-core)
+For more information you can refer to the [SDK Core](https://github.com/miracl/mfa-client-sdk-core)
