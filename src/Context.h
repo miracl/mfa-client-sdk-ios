@@ -21,11 +21,11 @@
 #define CONTEXT_H_
 
 #include "def.h"
-#include "mpin_sdk.h"
+#include "mpin_sdk_base.h"
 
 namespace sdk_non_tee {
 
-class Context: public MPinSDK::IContext {
+class Context: public MPinSDKBase::IContext {
 public:
 	static Context* Instance();
 	virtual IHttpRequest * CreateHttpRequest() const;

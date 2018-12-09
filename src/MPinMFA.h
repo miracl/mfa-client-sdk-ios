@@ -99,21 +99,22 @@
                                        pin1:(NSString *) pin1
                                     regCode:(RegCode **)regCode;
 
-+ (MpinStatus*) StartRegistrationDVS:(const id<IUser>)user token:(NSString *) token;
++ (MpinStatus*) StartRegistrationDVS:(const id<IUser>) user
+                                pin0:(NSString *) pin0
+                                pin1:(NSString *) pin1;
 
 + (MpinStatus*) FinishRegistrationDVS:(const id<IUser>)user
                                pinDVS:(NSString *) pinDVS
                                   nfc:(NSString *) nfc;
 
-+ ( BOOL ) VerifyDocument:(NSString *) strDoc
-                     hash:(NSData *)hash;
++ (NSData*) HashDocument:(NSString *) strDoc;
++ (BOOL) VerifyDocument:(NSString *) strDoc hash:(NSData *)hash;
 
-+ (MpinStatus*) Sign: (id<IUser>)user
++ (MpinStatus*) Sign:(id<IUser>)user
         documentHash:(NSData *)hash
-                pin0: (NSString *) pin0
-                pin1: (NSString *) pin1
-           epochTime: (double) epochTime
-          authZToken: (NSString *) authZToken
+                pin0:(NSString *) pin0
+                pin1:(NSString *) pin1
+           epochTime:(double) epochTime
               result:(BridgeSignature **)result;
 
 + (MpinStatus*) StartAuthenticationOTP:(const id<IUser>)user;

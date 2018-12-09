@@ -58,8 +58,9 @@ typedef NS_ENUM(NSInteger, MPinStatus) {
     // Remote error - wrong client app version
     UNTRUSTED_DOMAIN_ERROR = 18,
     // Local error - a request to a domain, that is not in the trusted list was attempted
-    REGISTRATION_EXPIRED = 19
+    REGISTRATION_EXPIRED = 19,
     // Remote error - regOTT expired
+    OPERATION_NOT_ALLOWED = 20 // Remote error - RegCode generation not allowed for users, registered with RegCode
 };
 
 @interface MpinStatus : NSObject

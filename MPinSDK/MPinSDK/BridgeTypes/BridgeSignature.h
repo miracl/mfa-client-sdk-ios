@@ -11,15 +11,17 @@
 @interface BridgeSignature : NSObject
 
 -(id) initWith: (NSData *) strHash
-        mpinId: (NSData *) strMpinId
+        mpinId: (NSString *) strMpinId
           strU: (NSData *) strU
           strV: (NSData *) strV
-  strPublicKey: (NSData *) strPublicKey;
+  strPublicKey: (NSData *) strPublicKey
+          dtas: (NSString *) strDtas;
 
 @property (nonatomic) NSData    *strHash;
-@property (nonatomic) NSData    *strMpinId;
+@property (nonatomic) NSString  *strMpinId;
 @property (nonatomic) NSData    *strU;
 @property (nonatomic) NSData    *strV;
 @property (nonatomic) NSData    *strPublicKey;
+@property (nonatomic) NSString  *strDtas;
 
 @end

@@ -20,7 +20,7 @@
 #ifndef DEF_H_
 #define DEF_H_
 
-#include "mpin_sdk.h"
+#include "mpin_sdk_base.h"
 
 #define RELEASE(pointer)  \
     if ((pointer) != NULL ) { \
@@ -38,13 +38,13 @@
 #define IN
 #define OUT
 
-typedef MPinSDK::String String;
-typedef MPinSDK::IContext IContext;
-typedef MPinSDK::IHttpRequest IHttpRequest;
-typedef MPinSDK::IStorage IStorage;
-typedef MPinSDK::StringMap StringMap;
+typedef MPinSDKBase::String String;
+typedef MPinSDKBase::IContext IContext;
+typedef MPinSDKBase::IHttpRequest IHttpRequest;
+typedef MPinSDKBase::IStorage IStorage;
+typedef MPinSDKBase::StringMap StringMap;
 typedef IHttpRequest::Method Method;
-typedef MPinSDK::CryptoType CryptoType;
+typedef MPinSDKBase::CryptoType CryptoType;
 
 static const String kEmptyString = "";
 static const String kNegativeString = "-1";

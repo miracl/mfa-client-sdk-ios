@@ -52,9 +52,9 @@ namespace sdk_non_tee {
     IStorage * Context::GetStorage(IStorage::Type type) const {
         switch (type)
         {
-            case MPinSDK::IStorage::SECURE:
+            case MPinSDKBase::IStorage::SECURE:
                 return m_pIstorageSecure;
-            case MPinSDK::IStorage::NONSECURE:
+            case MPinSDKBase::IStorage::NONSECURE:
                 return m_pIstorageNonSecure;
             default:
                 return NULL;
@@ -62,7 +62,7 @@ namespace sdk_non_tee {
     }
     
     CryptoType Context::GetMPinCryptoType() const {
-        return MPinSDK::CRYPTO_NON_TEE;
+        return MPinSDKBase::CRYPTO_NON_TEE;
     }
     
     Context::~Context() {

@@ -18,10 +18,10 @@
  */
 
 #import <Foundation/Foundation.h>
-#import "mpin_sdk.h"
+#import "mpin_sdk_base.h"
 #import "IUser.h"
 
-typedef MPinSDK::UserPtr UserPtr;
+typedef MPinSDKBase::UserPtr UserPtr;
 
 @interface User : NSObject <IUser>
 

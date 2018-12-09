@@ -28,6 +28,11 @@ typedef NS_ENUM(NSInteger, UserState) {
     BLOCKED
 };
 
+FOUNDATION_EXPORT NSString *const VERIFICATION_TYPE_EMAIL;
+FOUNDATION_EXPORT NSString *const VERIFICATION_TYPE_CUSTOM;
+FOUNDATION_EXPORT NSString *const VERIFICATION_TYPE_REG_CODE;
+FOUNDATION_EXPORT NSString *const VERIFICATION_TYPE_DVS_REG_TOKEN;
+
 @protocol IUser <NSObject>
 
 - (NSString*) getIdentity;
@@ -39,5 +44,6 @@ typedef NS_ENUM(NSInteger, UserState) {
 - (Expiration*) getRegistrationExpiration;
 - ( int ) getPinLength;
 - (BOOL) canSign;
+- (NSString*) getVerificationType;
 
 @end
