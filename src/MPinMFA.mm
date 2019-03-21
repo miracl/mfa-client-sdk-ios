@@ -349,7 +349,14 @@ typedef MfaSDK::Signature       Signature;
 
 + ( BOOL ) VerifyDocument:(NSString *) strDoc hash:(NSData *) hash
 {
-    return [hash isEqualToData:[MPinMFA HashDocument:strDoc]];
+    // The result of HashDocument is not hex encoded so we need to hex decode the hash before comparing them
+    NSString *hashStr = [[NSString alloc] initWithData:hash encoding:NSUTF8StringEncoding];
+    String hexDecoded = util::HexDecode([hashStr UTF8String]);
+    hash = [[NSData alloc] initWithBytes:hexDecoded.data() length:hexDecoded.length()];
+    
+    NSData *data = [MPinMFA HashDocument:strDoc];
+    
+    return [hash isEqualToData:data];
 }
 
 + (MpinStatus*) Sign:(id<IUser>)user
