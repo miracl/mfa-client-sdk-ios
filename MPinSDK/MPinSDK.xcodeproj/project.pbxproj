@@ -12,6 +12,219 @@
 		9609CB9A1FDAC5E500528A50 /* ServiceDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 9609CB991FDAC5E400528A50 /* ServiceDetails.m */; };
 		968EADF320B40678001094AD /* RegCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 968EADF220B40678001094AD /* RegCode.m */; };
 		96F56F002046C0E6009AABC7 /* Expiration.m in Sources */ = {isa = PBXBuildFile; fileRef = 96F56EFF2046C0E6009AABC7 /* Expiration.m */; };
+		B092DEFB2248AD95003CD2D0 /* Expiration.m in Sources */ = {isa = PBXBuildFile; fileRef = 96F56EFF2046C0E6009AABC7 /* Expiration.m */; };
+		B092DEFC2248ADA5003CD2D0 /* rand.c in Sources */ = {isa = PBXBuildFile; fileRef = C7F2FB9B21BD67C500D70E41 /* rand.c */; };
+		B092DEFD2248ADE9003CD2D0 /* hash.c in Sources */ = {isa = PBXBuildFile; fileRef = C7F2FBB321BD67C800D70E41 /* hash.c */; };
+		B092DEFE2248AE04003CD2D0 /* pbc_support.c in Sources */ = {isa = PBXBuildFile; fileRef = C7F2FBA121BD67C600D70E41 /* pbc_support.c */; };
+		B092DEFF2248AE2F003CD2D0 /* oct.c in Sources */ = {isa = PBXBuildFile; fileRef = C7F2FBAE21BD67C700D70E41 /* oct.c */; };
+		B092DF002248AE8B003CD2D0 /* gcm.c in Sources */ = {isa = PBXBuildFile; fileRef = C7F2FBAC21BD67C700D70E41 /* gcm.c */; };
+		B092DF012248AEB0003CD2D0 /* aes.c in Sources */ = {isa = PBXBuildFile; fileRef = C7F2FBB421BD67C800D70E41 /* aes.c */; };
+		B092DF022248AEDF003CD2D0 /* ecp_BLS383.c in Sources */ = {isa = PBXBuildFile; fileRef = C7F2FBAF21BD67C800D70E41 /* ecp_BLS383.c */; };
+		B092DF032248AF2B003CD2D0 /* amcl++_curve_BLS383.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C7F2FBAB21BD67C700D70E41 /* amcl++_curve_BLS383.cpp */; };
+		B092DF042248AF2B003CD2D0 /* ecp2_BLS383.c in Sources */ = {isa = PBXBuildFile; fileRef = C7F2FBB221BD67C800D70E41 /* ecp2_BLS383.c */; };
+		B092DF052248AF2B003CD2D0 /* fp_BLS383.c in Sources */ = {isa = PBXBuildFile; fileRef = C7F2FBA421BD67C600D70E41 /* fp_BLS383.c */; };
+		B092DF062248AF2B003CD2D0 /* fp2_BLS383.c in Sources */ = {isa = PBXBuildFile; fileRef = C7F2FBB021BD67C800D70E41 /* fp2_BLS383.c */; };
+		B092DF072248AF2B003CD2D0 /* fp4_BLS383.c in Sources */ = {isa = PBXBuildFile; fileRef = C7F2FB9D21BD67C600D70E41 /* fp4_BLS383.c */; };
+		B092DF082248AF2B003CD2D0 /* fp12_BLS383.c in Sources */ = {isa = PBXBuildFile; fileRef = C7F2FB9621BD67C500D70E41 /* fp12_BLS383.c */; };
+		B092DF092248AF2B003CD2D0 /* mpin_BLS383.c in Sources */ = {isa = PBXBuildFile; fileRef = C7F2FB9C21BD67C500D70E41 /* mpin_BLS383.c */; };
+		B092DF0A2248AF2B003CD2D0 /* pair_BLS383.c in Sources */ = {isa = PBXBuildFile; fileRef = C7F2FB9921BD67C500D70E41 /* pair_BLS383.c */; };
+		B092DF0B2248AF2B003CD2D0 /* rom_curve_BLS383.c in Sources */ = {isa = PBXBuildFile; fileRef = C7F2FB9E21BD67C600D70E41 /* rom_curve_BLS383.c */; };
+		B092DF0C2248AF2B003CD2D0 /* rom_field_BLS383.c in Sources */ = {isa = PBXBuildFile; fileRef = C7F2FBA621BD67C700D70E41 /* rom_field_BLS383.c */; };
+		B092DF0D2248B0CF003CD2D0 /* big_256_28.c in Sources */ = {isa = PBXBuildFile; fileRef = C7F2FB9F21BD67C600D70E41 /* big_256_28.c */; };
+		B092DF0E2248B0CF003CD2D0 /* big_384_29.c in Sources */ = {isa = PBXBuildFile; fileRef = C7F2FBAD21BD67C700D70E41 /* big_384_29.c */; };
+		B092DF0F2248B0F6003CD2D0 /* CvString.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FED0EE191C68C9A3001AB531 /* CvString.cpp */; };
+		B092DF102248B10B003CD2D0 /* ServiceDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 9609CB991FDAC5E400528A50 /* ServiceDetails.m */; };
+		B092DF112248B138003CD2D0 /* amcl++_curve_BN254CX.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C7F2FBA021BD67C600D70E41 /* amcl++_curve_BN254CX.cpp */; };
+		B092DF122248B138003CD2D0 /* ecp_BN254CX.c in Sources */ = {isa = PBXBuildFile; fileRef = C7F2FBB521BD67C800D70E41 /* ecp_BN254CX.c */; };
+		B092DF132248B138003CD2D0 /* ecp2_BN254CX.c in Sources */ = {isa = PBXBuildFile; fileRef = C7F2FB9A21BD67C500D70E41 /* ecp2_BN254CX.c */; };
+		B092DF142248B138003CD2D0 /* fp_BN254CX.c in Sources */ = {isa = PBXBuildFile; fileRef = C7F2FB9821BD67C500D70E41 /* fp_BN254CX.c */; };
+		B092DF152248B138003CD2D0 /* fp2_BN254CX.c in Sources */ = {isa = PBXBuildFile; fileRef = C7F2FBA921BD67C700D70E41 /* fp2_BN254CX.c */; };
+		B092DF162248B138003CD2D0 /* fp4_BN254CX.c in Sources */ = {isa = PBXBuildFile; fileRef = C7F2FBA821BD67C700D70E41 /* fp4_BN254CX.c */; };
+		B092DF172248B138003CD2D0 /* fp12_BN254CX.c in Sources */ = {isa = PBXBuildFile; fileRef = C7F2FBA521BD67C700D70E41 /* fp12_BN254CX.c */; };
+		B092DF182248B138003CD2D0 /* mpin_BN254CX.c in Sources */ = {isa = PBXBuildFile; fileRef = C7F2FBA721BD67C700D70E41 /* mpin_BN254CX.c */; };
+		B092DF192248B138003CD2D0 /* pair_BN254CX.c in Sources */ = {isa = PBXBuildFile; fileRef = C7F2FBAA21BD67C700D70E41 /* pair_BN254CX.c */; };
+		B092DF1A2248B138003CD2D0 /* rom_curve_BN254CX.c in Sources */ = {isa = PBXBuildFile; fileRef = C7F2FBA221BD67C600D70E41 /* rom_curve_BN254CX.c */; };
+		B092DF1B2248B138003CD2D0 /* rom_field_BN254CX.c in Sources */ = {isa = PBXBuildFile; fileRef = C7F2FBA321BD67C600D70E41 /* rom_field_BN254CX.c */; };
+		B092DF1D2248B44F003CD2D0 /* MultiFactor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9609CB971FDA9B1600528A50 /* MultiFactor.m */; };
+		B092DF1E2248B463003CD2D0 /* OTP.m in Sources */ = {isa = PBXBuildFile; fileRef = FE991F011C5F66540014F23E /* OTP.m */; };
+		B092DF232248B6EC003CD2D0 /* randapi.c in Sources */ = {isa = PBXBuildFile; fileRef = C7F2FBB121BD67C800D70E41 /* randapi.c */; };
+		B092DF242248B700003CD2D0 /* utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FED0EE021C68C984001AB531 /* utils.cpp */; };
+		B092DF252248B72E003CD2D0 /* CvXcode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FED0EE1A1C68C9A3001AB531 /* CvXcode.cpp */; };
+		B092DF2B2248BB07003CD2D0 /* MPin.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = FE991EFC1C5F66540014F23E /* MPin.h */; };
+		B092DF2C2248BB0C003CD2D0 /* OTP.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = FE991F001C5F66540014F23E /* OTP.h */; };
+		B092DF2D2248BB18003CD2D0 /* IUser.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = FE991EFB1C5F66540014F23E /* IUser.h */; };
+		B092DF2E2248BB1D003CD2D0 /* MpinStatus.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = FE991EFE1C5F66540014F23E /* MpinStatus.h */; };
+		B092DF302248BB67003CD2D0 /* MpinStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = FE991EFF1C5F66540014F23E /* MpinStatus.m */; };
+		B092DF342248BC98003CD2D0 /* mpin_sdk.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FED0EDFB1C68C984001AB531 /* mpin_sdk.cpp */; };
+		B092DF352248BCFA003CD2D0 /* mpin_sdk_base.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FE6016441E0AE298002D8BDE /* mpin_sdk_base.cpp */; };
+		B092DF362248BD27003CD2D0 /* mpin_crypto_non_tee.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FED0EDF81C68C984001AB531 /* mpin_crypto_non_tee.cpp */; };
+		B092DF372248BDA8003CD2D0 /* amcl++.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C7F2FB9721BD67C500D70E41 /* amcl++.cpp */; };
+		B092DF382248BDE7003CD2D0 /* mfa_sdk.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FE71B73F1E0AB960009A49C9 /* mfa_sdk.cpp */; };
+		B092DF3A2248BE0B003CD2D0 /* SessionDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = FE7A4AD61D8D72D600E732B4 /* SessionDetails.m */; };
+		B092DF3B2248BE12003CD2D0 /* User.mm in Sources */ = {isa = PBXBuildFile; fileRef = FE991F051C5F66540014F23E /* User.mm */; };
+		B092DF3C2248BE19003CD2D0 /* RegCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 968EADF220B40678001094AD /* RegCode.m */; };
+		B092DF3D2248BE20003CD2D0 /* Storage.mm in Sources */ = {isa = PBXBuildFile; fileRef = FE991F031C5F66540014F23E /* Storage.mm */; };
+		B092DF3E2248BE41003CD2D0 /* HTTPConnector.mm in Sources */ = {isa = PBXBuildFile; fileRef = FE991EFA1C5F66540014F23E /* HTTPConnector.mm */; };
+		B092DF3F2248BE63003CD2D0 /* MPin.mm in Sources */ = {isa = PBXBuildFile; fileRef = FE991EFD1C5F66540014F23E /* MPin.mm */; };
+		B092DF402248BE63003CD2D0 /* MPinMFA.mm in Sources */ = {isa = PBXBuildFile; fileRef = FE71B73D1E0AA6A3009A49C9 /* MPinMFA.mm */; };
+		B092DF412248BE7D003CD2D0 /* BridgeSignature.m in Sources */ = {isa = PBXBuildFile; fileRef = 3988A7781FB1EE6400C5715C /* BridgeSignature.m */; };
+		B092DF422248BE82003CD2D0 /* Context.mm in Sources */ = {isa = PBXBuildFile; fileRef = FE991EF61C5F66540014F23E /* Context.mm */; };
+		B092DF672248BF16003CD2D0 /* MPinMFA.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = FE71B73C1E0AA6A3009A49C9 /* MPinMFA.h */; };
+		B092DF6F2248C013003CD2D0 /* MPinMFA.h in Headers */ = {isa = PBXBuildFile; fileRef = FE71B73C1E0AA6A3009A49C9 /* MPinMFA.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B092DF702248C018003CD2D0 /* MpinStatus.h in Headers */ = {isa = PBXBuildFile; fileRef = FE991EFE1C5F66540014F23E /* MpinStatus.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B092DF712248C01D003CD2D0 /* IUser.h in Headers */ = {isa = PBXBuildFile; fileRef = FE991EFB1C5F66540014F23E /* IUser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B092DF722248C021003CD2D0 /* OTP.h in Headers */ = {isa = PBXBuildFile; fileRef = FE991F001C5F66540014F23E /* OTP.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B092DF732248C029003CD2D0 /* MPin.h in Headers */ = {isa = PBXBuildFile; fileRef = FE991EFC1C5F66540014F23E /* MPin.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B092DF782248C35E003CD2D0 /* Expiration.h in Headers */ = {isa = PBXBuildFile; fileRef = 96F56EFE2046C0E6009AABC7 /* Expiration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B092DF792248C369003CD2D0 /* Expiration.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 96F56EFE2046C0E6009AABC7 /* Expiration.h */; };
+		B092DF7C2248C3D5003CD2D0 /* SessionDetails.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = FE7A4AD51D8D72D600E732B4 /* SessionDetails.h */; };
+		B092DF7D2248C3DC003CD2D0 /* ServiceDetails.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = FE55B5411DF839E600D3D69F /* ServiceDetails.h */; };
+		B092DF7E2248C3E2003CD2D0 /* BridgeSignature.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3988A7771FB1EE6400C5715C /* BridgeSignature.h */; };
+		B092DF7F2248C3E7003CD2D0 /* MultiFactor.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9609CB961FDA9B1600528A50 /* MultiFactor.h */; };
+		B092DF802248C3ED003CD2D0 /* RegCode.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 968EADF120B40678001094AD /* RegCode.h */; };
+		B092DF812248C3F5003CD2D0 /* RegCode.h in Headers */ = {isa = PBXBuildFile; fileRef = 968EADF120B40678001094AD /* RegCode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B092DF822248C3FC003CD2D0 /* MultiFactor.h in Headers */ = {isa = PBXBuildFile; fileRef = 9609CB961FDA9B1600528A50 /* MultiFactor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B092DF832248C403003CD2D0 /* BridgeSignature.h in Headers */ = {isa = PBXBuildFile; fileRef = 3988A7771FB1EE6400C5715C /* BridgeSignature.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B092DF842248C40C003CD2D0 /* ServiceDetails.h in Headers */ = {isa = PBXBuildFile; fileRef = FE55B5411DF839E600D3D69F /* ServiceDetails.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B092DF852248C415003CD2D0 /* SessionDetails.h in Headers */ = {isa = PBXBuildFile; fileRef = FE7A4AD51D8D72D600E732B4 /* SessionDetails.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B0B9841A2243A87800407A81 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE49FF9B1A1A3C2D000030A4 /* Foundation.framework */; };
+		B0BB233A224A008700C09415 /* aes.c in Sources */ = {isa = PBXBuildFile; fileRef = C7F2FBB421BD67C800D70E41 /* aes.c */; };
+		B0BB233B224A009A00C09415 /* amcl++_curve_BLS383.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C7F2FBAB21BD67C700D70E41 /* amcl++_curve_BLS383.cpp */; };
+		B0BB233C224A009A00C09415 /* amcl++_curve_BN254CX.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C7F2FBA021BD67C600D70E41 /* amcl++_curve_BN254CX.cpp */; };
+		B0BB233D224A009A00C09415 /* amcl++.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C7F2FB9721BD67C500D70E41 /* amcl++.cpp */; };
+		B0BB233E224A00D300C09415 /* big_256_28.c in Sources */ = {isa = PBXBuildFile; fileRef = C7F2FB9F21BD67C600D70E41 /* big_256_28.c */; };
+		B0BB233F224A00D300C09415 /* big_384_29.c in Sources */ = {isa = PBXBuildFile; fileRef = C7F2FBAD21BD67C700D70E41 /* big_384_29.c */; };
+		B0BB2340224A00D300C09415 /* ecp_BLS383.c in Sources */ = {isa = PBXBuildFile; fileRef = C7F2FBAF21BD67C800D70E41 /* ecp_BLS383.c */; };
+		B0BB2341224A00D300C09415 /* ecp_BN254CX.c in Sources */ = {isa = PBXBuildFile; fileRef = C7F2FBB521BD67C800D70E41 /* ecp_BN254CX.c */; };
+		B0BB2342224A00D300C09415 /* ecp2_BLS383.c in Sources */ = {isa = PBXBuildFile; fileRef = C7F2FBB221BD67C800D70E41 /* ecp2_BLS383.c */; };
+		B0BB2343224A00D300C09415 /* ecp2_BN254CX.c in Sources */ = {isa = PBXBuildFile; fileRef = C7F2FB9A21BD67C500D70E41 /* ecp2_BN254CX.c */; };
+		B0BB2344224A00D300C09415 /* fp_BLS383.c in Sources */ = {isa = PBXBuildFile; fileRef = C7F2FBA421BD67C600D70E41 /* fp_BLS383.c */; };
+		B0BB2345224A00D300C09415 /* fp_BN254CX.c in Sources */ = {isa = PBXBuildFile; fileRef = C7F2FB9821BD67C500D70E41 /* fp_BN254CX.c */; };
+		B0BB2346224A00D300C09415 /* fp2_BLS383.c in Sources */ = {isa = PBXBuildFile; fileRef = C7F2FBB021BD67C800D70E41 /* fp2_BLS383.c */; };
+		B0BB2347224A00D300C09415 /* fp2_BN254CX.c in Sources */ = {isa = PBXBuildFile; fileRef = C7F2FBA921BD67C700D70E41 /* fp2_BN254CX.c */; };
+		B0BB2348224A00D300C09415 /* fp4_BLS383.c in Sources */ = {isa = PBXBuildFile; fileRef = C7F2FB9D21BD67C600D70E41 /* fp4_BLS383.c */; };
+		B0BB2349224A00D300C09415 /* fp4_BN254CX.c in Sources */ = {isa = PBXBuildFile; fileRef = C7F2FBA821BD67C700D70E41 /* fp4_BN254CX.c */; };
+		B0BB234A224A00D300C09415 /* fp12_BLS383.c in Sources */ = {isa = PBXBuildFile; fileRef = C7F2FB9621BD67C500D70E41 /* fp12_BLS383.c */; };
+		B0BB234B224A00D300C09415 /* fp12_BN254CX.c in Sources */ = {isa = PBXBuildFile; fileRef = C7F2FBA521BD67C700D70E41 /* fp12_BN254CX.c */; };
+		B0BB234C224A00D300C09415 /* gcm.c in Sources */ = {isa = PBXBuildFile; fileRef = C7F2FBAC21BD67C700D70E41 /* gcm.c */; };
+		B0BB234D224A00D300C09415 /* hash.c in Sources */ = {isa = PBXBuildFile; fileRef = C7F2FBB321BD67C800D70E41 /* hash.c */; };
+		B0BB234E224A00D300C09415 /* mpin_BLS383.c in Sources */ = {isa = PBXBuildFile; fileRef = C7F2FB9C21BD67C500D70E41 /* mpin_BLS383.c */; };
+		B0BB234F224A00D300C09415 /* mpin_BN254CX.c in Sources */ = {isa = PBXBuildFile; fileRef = C7F2FBA721BD67C700D70E41 /* mpin_BN254CX.c */; };
+		B0BB2350224A00D300C09415 /* oct.c in Sources */ = {isa = PBXBuildFile; fileRef = C7F2FBAE21BD67C700D70E41 /* oct.c */; };
+		B0BB2351224A00D300C09415 /* pair_BLS383.c in Sources */ = {isa = PBXBuildFile; fileRef = C7F2FB9921BD67C500D70E41 /* pair_BLS383.c */; };
+		B0BB2352224A00D300C09415 /* pair_BN254CX.c in Sources */ = {isa = PBXBuildFile; fileRef = C7F2FBAA21BD67C700D70E41 /* pair_BN254CX.c */; };
+		B0BB2353224A00D300C09415 /* pbc_support.c in Sources */ = {isa = PBXBuildFile; fileRef = C7F2FBA121BD67C600D70E41 /* pbc_support.c */; };
+		B0BB2354224A00D300C09415 /* rand.c in Sources */ = {isa = PBXBuildFile; fileRef = C7F2FB9B21BD67C500D70E41 /* rand.c */; };
+		B0BB2355224A00D300C09415 /* randapi.c in Sources */ = {isa = PBXBuildFile; fileRef = C7F2FBB121BD67C800D70E41 /* randapi.c */; };
+		B0BB2356224A00D300C09415 /* rom_curve_BLS383.c in Sources */ = {isa = PBXBuildFile; fileRef = C7F2FB9E21BD67C600D70E41 /* rom_curve_BLS383.c */; };
+		B0BB2357224A00D300C09415 /* rom_curve_BN254CX.c in Sources */ = {isa = PBXBuildFile; fileRef = C7F2FBA221BD67C600D70E41 /* rom_curve_BN254CX.c */; };
+		B0BB2358224A00D300C09415 /* rom_field_BLS383.c in Sources */ = {isa = PBXBuildFile; fileRef = C7F2FBA621BD67C700D70E41 /* rom_field_BLS383.c */; };
+		B0BB2359224A00D300C09415 /* rom_field_BN254CX.c in Sources */ = {isa = PBXBuildFile; fileRef = C7F2FBA321BD67C600D70E41 /* rom_field_BN254CX.c */; };
+		B0BB235A224A011200C09415 /* amcl.h in Headers */ = {isa = PBXBuildFile; fileRef = C7F2FB9321BD67A800D70E41 /* amcl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B0BB235B224A011200C09415 /* amcl++_curve_BLS383.h in Headers */ = {isa = PBXBuildFile; fileRef = C7F2FB7D21BD67A500D70E41 /* amcl++_curve_BLS383.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B0BB235C224A011200C09415 /* amcl++_curve_BN254CX.h in Headers */ = {isa = PBXBuildFile; fileRef = C7F2FB7621BD67A500D70E41 /* amcl++_curve_BN254CX.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B0BB235D224A011200C09415 /* amcl++_curve.h in Headers */ = {isa = PBXBuildFile; fileRef = C7F2FB8721BD67A600D70E41 /* amcl++_curve.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B0BB235E224A011200C09415 /* amcl++.h in Headers */ = {isa = PBXBuildFile; fileRef = C7F2FB7921BD67A500D70E41 /* amcl++.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B0BB235F224A011200C09415 /* arch.h in Headers */ = {isa = PBXBuildFile; fileRef = C7F2FB8D21BD67A700D70E41 /* arch.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B0BB2360224A011200C09415 /* big_256_28.h in Headers */ = {isa = PBXBuildFile; fileRef = C7F2FB8421BD67A600D70E41 /* big_256_28.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B0BB2361224A011200C09415 /* big_384_29.h in Headers */ = {isa = PBXBuildFile; fileRef = C7F2FB8821BD67A700D70E41 /* big_384_29.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B0BB2362224A011200C09415 /* config_big_256_28.h in Headers */ = {isa = PBXBuildFile; fileRef = C7F2FB8921BD67A700D70E41 /* config_big_256_28.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B0BB2363224A011200C09415 /* config_big_384_29.h in Headers */ = {isa = PBXBuildFile; fileRef = C7F2FB9121BD67A800D70E41 /* config_big_384_29.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B0BB2364224A011200C09415 /* config_curve_BLS383.h in Headers */ = {isa = PBXBuildFile; fileRef = C7F2FB7C21BD67A500D70E41 /* config_curve_BLS383.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B0BB2365224A011200C09415 /* config_curve_BN254CX.h in Headers */ = {isa = PBXBuildFile; fileRef = C7F2FB7E21BD67A500D70E41 /* config_curve_BN254CX.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B0BB2366224A011200C09415 /* config_field_BLS383.h in Headers */ = {isa = PBXBuildFile; fileRef = C7F2FB9521BD67A800D70E41 /* config_field_BLS383.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B0BB2367224A011200C09415 /* config_field_BN254CX.h in Headers */ = {isa = PBXBuildFile; fileRef = C7F2FB9421BD67A800D70E41 /* config_field_BN254CX.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B0BB2368224A011200C09415 /* ecp_BLS383.h in Headers */ = {isa = PBXBuildFile; fileRef = C7F2FB8A21BD67A700D70E41 /* ecp_BLS383.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B0BB2369224A011200C09415 /* ecp_BN254CX.h in Headers */ = {isa = PBXBuildFile; fileRef = C7F2FB7A21BD67A500D70E41 /* ecp_BN254CX.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B0BB236A224A011200C09415 /* ecp2_BLS383.h in Headers */ = {isa = PBXBuildFile; fileRef = C7F2FB9021BD67A800D70E41 /* ecp2_BLS383.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B0BB236B224A011300C09415 /* ecp2_BN254CX.h in Headers */ = {isa = PBXBuildFile; fileRef = C7F2FB9221BD67A800D70E41 /* ecp2_BN254CX.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B0BB236C224A011300C09415 /* fp_BLS383.h in Headers */ = {isa = PBXBuildFile; fileRef = C7F2FB8021BD67A600D70E41 /* fp_BLS383.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B0BB236D224A011300C09415 /* fp_BN254CX.h in Headers */ = {isa = PBXBuildFile; fileRef = C7F2FB7B21BD67A500D70E41 /* fp_BN254CX.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B0BB236E224A011300C09415 /* fp2_BLS383.h in Headers */ = {isa = PBXBuildFile; fileRef = C7F2FB7721BD67A500D70E41 /* fp2_BLS383.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B0BB236F224A011300C09415 /* fp2_BN254CX.h in Headers */ = {isa = PBXBuildFile; fileRef = C7F2FB7821BD67A500D70E41 /* fp2_BN254CX.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B0BB2370224A011300C09415 /* fp4_BLS383.h in Headers */ = {isa = PBXBuildFile; fileRef = C7F2FB8321BD67A600D70E41 /* fp4_BLS383.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B0BB2371224A011300C09415 /* fp4_BN254CX.h in Headers */ = {isa = PBXBuildFile; fileRef = C7F2FB8C21BD67A700D70E41 /* fp4_BN254CX.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B0BB2372224A011300C09415 /* fp12_BLS383.h in Headers */ = {isa = PBXBuildFile; fileRef = C7F2FB8521BD67A600D70E41 /* fp12_BLS383.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B0BB2373224A011300C09415 /* fp12_BN254CX.h in Headers */ = {isa = PBXBuildFile; fileRef = C7F2FB8B21BD67A700D70E41 /* fp12_BN254CX.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B0BB2374224A011300C09415 /* mpin_BLS383.h in Headers */ = {isa = PBXBuildFile; fileRef = C7F2FB8E21BD67A700D70E41 /* mpin_BLS383.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B0BB2375224A011300C09415 /* mpin_BN254CX.h in Headers */ = {isa = PBXBuildFile; fileRef = C7F2FB8621BD67A600D70E41 /* mpin_BN254CX.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B0BB2376224A011300C09415 /* pair_BLS383.h in Headers */ = {isa = PBXBuildFile; fileRef = C7F2FB8221BD67A600D70E41 /* pair_BLS383.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B0BB2377224A011300C09415 /* pair_BN254CX.h in Headers */ = {isa = PBXBuildFile; fileRef = C7F2FB8F21BD67A700D70E41 /* pair_BN254CX.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B0BB2378224A011300C09415 /* pbc_support.h in Headers */ = {isa = PBXBuildFile; fileRef = C7F2FB7F21BD67A600D70E41 /* pbc_support.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B0BB2379224A011300C09415 /* randapi.h in Headers */ = {isa = PBXBuildFile; fileRef = C7F2FB8121BD67A600D70E41 /* randapi.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B0BB237B224A014600C09415 /* amcl.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C7F2FB9321BD67A800D70E41 /* amcl.h */; };
+		B0BB237C224A014600C09415 /* amcl++_curve_BLS383.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C7F2FB7D21BD67A500D70E41 /* amcl++_curve_BLS383.h */; };
+		B0BB237D224A014600C09415 /* amcl++_curve_BN254CX.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C7F2FB7621BD67A500D70E41 /* amcl++_curve_BN254CX.h */; };
+		B0BB237E224A014600C09415 /* amcl++_curve.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C7F2FB8721BD67A600D70E41 /* amcl++_curve.h */; };
+		B0BB237F224A014600C09415 /* amcl++.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C7F2FB7921BD67A500D70E41 /* amcl++.h */; };
+		B0BB2380224A014600C09415 /* arch.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C7F2FB8D21BD67A700D70E41 /* arch.h */; };
+		B0BB2381224A014600C09415 /* big_256_28.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C7F2FB8421BD67A600D70E41 /* big_256_28.h */; };
+		B0BB2382224A014600C09415 /* big_384_29.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C7F2FB8821BD67A700D70E41 /* big_384_29.h */; };
+		B0BB2383224A014600C09415 /* config_big_256_28.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C7F2FB8921BD67A700D70E41 /* config_big_256_28.h */; };
+		B0BB2384224A014600C09415 /* config_big_384_29.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C7F2FB9121BD67A800D70E41 /* config_big_384_29.h */; };
+		B0BB2385224A014600C09415 /* config_curve_BLS383.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C7F2FB7C21BD67A500D70E41 /* config_curve_BLS383.h */; };
+		B0BB2386224A014600C09415 /* config_curve_BN254CX.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C7F2FB7E21BD67A500D70E41 /* config_curve_BN254CX.h */; };
+		B0BB2387224A014600C09415 /* config_field_BLS383.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C7F2FB9521BD67A800D70E41 /* config_field_BLS383.h */; };
+		B0BB2388224A014600C09415 /* config_field_BN254CX.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C7F2FB9421BD67A800D70E41 /* config_field_BN254CX.h */; };
+		B0BB2389224A014600C09415 /* ecp_BLS383.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C7F2FB8A21BD67A700D70E41 /* ecp_BLS383.h */; };
+		B0BB238A224A014600C09415 /* ecp_BN254CX.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C7F2FB7A21BD67A500D70E41 /* ecp_BN254CX.h */; };
+		B0BB238B224A014600C09415 /* ecp2_BLS383.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C7F2FB9021BD67A800D70E41 /* ecp2_BLS383.h */; };
+		B0BB238C224A014600C09415 /* ecp2_BN254CX.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C7F2FB9221BD67A800D70E41 /* ecp2_BN254CX.h */; };
+		B0BB238D224A014600C09415 /* fp_BLS383.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C7F2FB8021BD67A600D70E41 /* fp_BLS383.h */; };
+		B0BB238E224A014600C09415 /* fp_BN254CX.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C7F2FB7B21BD67A500D70E41 /* fp_BN254CX.h */; };
+		B0BB238F224A014600C09415 /* fp2_BLS383.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C7F2FB7721BD67A500D70E41 /* fp2_BLS383.h */; };
+		B0BB2390224A014600C09415 /* fp2_BN254CX.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C7F2FB7821BD67A500D70E41 /* fp2_BN254CX.h */; };
+		B0BB2391224A014600C09415 /* fp4_BLS383.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C7F2FB8321BD67A600D70E41 /* fp4_BLS383.h */; };
+		B0BB2392224A014600C09415 /* fp4_BN254CX.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C7F2FB8C21BD67A700D70E41 /* fp4_BN254CX.h */; };
+		B0BB2393224A014600C09415 /* fp12_BLS383.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C7F2FB8521BD67A600D70E41 /* fp12_BLS383.h */; };
+		B0BB2394224A014600C09415 /* fp12_BN254CX.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C7F2FB8B21BD67A700D70E41 /* fp12_BN254CX.h */; };
+		B0BB2395224A014600C09415 /* mpin_BLS383.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C7F2FB8E21BD67A700D70E41 /* mpin_BLS383.h */; };
+		B0BB2396224A014600C09415 /* mpin_BN254CX.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C7F2FB8621BD67A600D70E41 /* mpin_BN254CX.h */; };
+		B0BB2397224A014600C09415 /* pair_BLS383.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C7F2FB8221BD67A600D70E41 /* pair_BLS383.h */; };
+		B0BB2398224A014600C09415 /* pair_BN254CX.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C7F2FB8F21BD67A700D70E41 /* pair_BN254CX.h */; };
+		B0BB2399224A014600C09415 /* pbc_support.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C7F2FB7F21BD67A600D70E41 /* pbc_support.h */; };
+		B0BB239A224A014600C09415 /* randapi.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C7F2FB8121BD67A600D70E41 /* randapi.h */; };
+		B0BB23AD224A019B00C09415 /* aes.c in Sources */ = {isa = PBXBuildFile; fileRef = C7F2FBB421BD67C800D70E41 /* aes.c */; };
+		B0BB23AE224A019B00C09415 /* amcl++_curve_BLS383.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C7F2FBAB21BD67C700D70E41 /* amcl++_curve_BLS383.cpp */; };
+		B0BB23AF224A019B00C09415 /* amcl++_curve_BN254CX.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C7F2FBA021BD67C600D70E41 /* amcl++_curve_BN254CX.cpp */; };
+		B0BB23B0224A019B00C09415 /* amcl++.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C7F2FB9721BD67C500D70E41 /* amcl++.cpp */; };
+		B0BB23B1224A019B00C09415 /* big_256_28.c in Sources */ = {isa = PBXBuildFile; fileRef = C7F2FB9F21BD67C600D70E41 /* big_256_28.c */; };
+		B0BB23B2224A019B00C09415 /* big_384_29.c in Sources */ = {isa = PBXBuildFile; fileRef = C7F2FBAD21BD67C700D70E41 /* big_384_29.c */; };
+		B0BB23B3224A019B00C09415 /* ecp_BLS383.c in Sources */ = {isa = PBXBuildFile; fileRef = C7F2FBAF21BD67C800D70E41 /* ecp_BLS383.c */; };
+		B0BB23B4224A019B00C09415 /* ecp_BN254CX.c in Sources */ = {isa = PBXBuildFile; fileRef = C7F2FBB521BD67C800D70E41 /* ecp_BN254CX.c */; };
+		B0BB23B5224A019B00C09415 /* ecp2_BLS383.c in Sources */ = {isa = PBXBuildFile; fileRef = C7F2FBB221BD67C800D70E41 /* ecp2_BLS383.c */; };
+		B0BB23B6224A019B00C09415 /* ecp2_BN254CX.c in Sources */ = {isa = PBXBuildFile; fileRef = C7F2FB9A21BD67C500D70E41 /* ecp2_BN254CX.c */; };
+		B0BB23B7224A019B00C09415 /* fp_BLS383.c in Sources */ = {isa = PBXBuildFile; fileRef = C7F2FBA421BD67C600D70E41 /* fp_BLS383.c */; };
+		B0BB23B8224A019B00C09415 /* fp_BN254CX.c in Sources */ = {isa = PBXBuildFile; fileRef = C7F2FB9821BD67C500D70E41 /* fp_BN254CX.c */; };
+		B0BB23B9224A019B00C09415 /* fp2_BLS383.c in Sources */ = {isa = PBXBuildFile; fileRef = C7F2FBB021BD67C800D70E41 /* fp2_BLS383.c */; };
+		B0BB23BA224A019B00C09415 /* fp2_BN254CX.c in Sources */ = {isa = PBXBuildFile; fileRef = C7F2FBA921BD67C700D70E41 /* fp2_BN254CX.c */; };
+		B0BB23BB224A019B00C09415 /* fp4_BLS383.c in Sources */ = {isa = PBXBuildFile; fileRef = C7F2FB9D21BD67C600D70E41 /* fp4_BLS383.c */; };
+		B0BB23BC224A019B00C09415 /* fp4_BN254CX.c in Sources */ = {isa = PBXBuildFile; fileRef = C7F2FBA821BD67C700D70E41 /* fp4_BN254CX.c */; };
+		B0BB23BD224A019B00C09415 /* fp12_BLS383.c in Sources */ = {isa = PBXBuildFile; fileRef = C7F2FB9621BD67C500D70E41 /* fp12_BLS383.c */; };
+		B0BB23BE224A019B00C09415 /* fp12_BN254CX.c in Sources */ = {isa = PBXBuildFile; fileRef = C7F2FBA521BD67C700D70E41 /* fp12_BN254CX.c */; };
+		B0BB23BF224A019B00C09415 /* gcm.c in Sources */ = {isa = PBXBuildFile; fileRef = C7F2FBAC21BD67C700D70E41 /* gcm.c */; };
+		B0BB23C0224A019B00C09415 /* hash.c in Sources */ = {isa = PBXBuildFile; fileRef = C7F2FBB321BD67C800D70E41 /* hash.c */; };
+		B0BB23C1224A019B00C09415 /* mpin_BLS383.c in Sources */ = {isa = PBXBuildFile; fileRef = C7F2FB9C21BD67C500D70E41 /* mpin_BLS383.c */; };
+		B0BB23C2224A019B00C09415 /* mpin_BN254CX.c in Sources */ = {isa = PBXBuildFile; fileRef = C7F2FBA721BD67C700D70E41 /* mpin_BN254CX.c */; };
+		B0BB23C3224A019B00C09415 /* oct.c in Sources */ = {isa = PBXBuildFile; fileRef = C7F2FBAE21BD67C700D70E41 /* oct.c */; };
+		B0BB23C4224A019B00C09415 /* pair_BLS383.c in Sources */ = {isa = PBXBuildFile; fileRef = C7F2FB9921BD67C500D70E41 /* pair_BLS383.c */; };
+		B0BB23C5224A019B00C09415 /* pair_BN254CX.c in Sources */ = {isa = PBXBuildFile; fileRef = C7F2FBAA21BD67C700D70E41 /* pair_BN254CX.c */; };
+		B0BB23C6224A019B00C09415 /* pbc_support.c in Sources */ = {isa = PBXBuildFile; fileRef = C7F2FBA121BD67C600D70E41 /* pbc_support.c */; };
+		B0BB23C7224A019B00C09415 /* rand.c in Sources */ = {isa = PBXBuildFile; fileRef = C7F2FB9B21BD67C500D70E41 /* rand.c */; };
+		B0BB23C8224A019B00C09415 /* randapi.c in Sources */ = {isa = PBXBuildFile; fileRef = C7F2FBB121BD67C800D70E41 /* randapi.c */; };
+		B0BB23C9224A019B00C09415 /* rom_curve_BLS383.c in Sources */ = {isa = PBXBuildFile; fileRef = C7F2FB9E21BD67C600D70E41 /* rom_curve_BLS383.c */; };
+		B0BB23CA224A019B00C09415 /* rom_curve_BN254CX.c in Sources */ = {isa = PBXBuildFile; fileRef = C7F2FBA221BD67C600D70E41 /* rom_curve_BN254CX.c */; };
+		B0BB23CB224A019B00C09415 /* rom_field_BLS383.c in Sources */ = {isa = PBXBuildFile; fileRef = C7F2FBA621BD67C700D70E41 /* rom_field_BLS383.c */; };
+		B0BB23CC224A019B00C09415 /* rom_field_BN254CX.c in Sources */ = {isa = PBXBuildFile; fileRef = C7F2FBA321BD67C600D70E41 /* rom_field_BN254CX.c */; };
+		B0BB23CD224A01E200C09415 /* mpin_crypto_non_tee.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FED0EDF81C68C984001AB531 /* mpin_crypto_non_tee.cpp */; };
+		B0BB23CE224A01E200C09415 /* mpin_sdk_base.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FE6016441E0AE298002D8BDE /* mpin_sdk_base.cpp */; };
+		B0BB23CF224A01E200C09415 /* mpin_sdk.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FED0EDFB1C68C984001AB531 /* mpin_sdk.cpp */; };
+		B0BB23D0224A01E200C09415 /* mfa_sdk.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FE71B73F1E0AB960009A49C9 /* mfa_sdk.cpp */; };
+		B0BB23D1224A01E200C09415 /* utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FED0EE021C68C984001AB531 /* utils.cpp */; };
+		B0BB23D3224A01FF00C09415 /* CvString.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FED0EE191C68C9A3001AB531 /* CvString.cpp */; };
+		B0BB23D5224A03E700C09415 /* Storage.mm in Sources */ = {isa = PBXBuildFile; fileRef = FE991F031C5F66540014F23E /* Storage.mm */; };
+		B0BB23D6224A042D00C09415 /* CvXcode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FED0EE1A1C68C9A3001AB531 /* CvXcode.cpp */; };
+		B0C4E58F224B632F00E93021 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE49FF9B1A1A3C2D000030A4 /* Foundation.framework */; };
 		C7F2FBB621BD67C800D70E41 /* fp12_BLS383.c in Sources */ = {isa = PBXBuildFile; fileRef = C7F2FB9621BD67C500D70E41 /* fp12_BLS383.c */; };
 		C7F2FBB721BD67C800D70E41 /* amcl++.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C7F2FB9721BD67C500D70E41 /* amcl++.cpp */; };
 		C7F2FBB821BD67C800D70E41 /* fp_BN254CX.c in Sources */ = {isa = PBXBuildFile; fileRef = C7F2FB9821BD67C500D70E41 /* fp_BN254CX.c */; };
@@ -68,6 +281,67 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		B092DF2A2248BAFD003CD2D0 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+				B092DF802248C3ED003CD2D0 /* RegCode.h in CopyFiles */,
+				B092DF7F2248C3E7003CD2D0 /* MultiFactor.h in CopyFiles */,
+				B092DF7E2248C3E2003CD2D0 /* BridgeSignature.h in CopyFiles */,
+				B092DF7D2248C3DC003CD2D0 /* ServiceDetails.h in CopyFiles */,
+				B092DF7C2248C3D5003CD2D0 /* SessionDetails.h in CopyFiles */,
+				B092DF792248C369003CD2D0 /* Expiration.h in CopyFiles */,
+				B092DF672248BF16003CD2D0 /* MPinMFA.h in CopyFiles */,
+				B092DF2E2248BB1D003CD2D0 /* MpinStatus.h in CopyFiles */,
+				B092DF2D2248BB18003CD2D0 /* IUser.h in CopyFiles */,
+				B092DF2C2248BB0C003CD2D0 /* OTP.h in CopyFiles */,
+				B092DF2B2248BB07003CD2D0 /* MPin.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0BB237A224A013700C09415 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+				B0BB237B224A014600C09415 /* amcl.h in CopyFiles */,
+				B0BB237C224A014600C09415 /* amcl++_curve_BLS383.h in CopyFiles */,
+				B0BB237D224A014600C09415 /* amcl++_curve_BN254CX.h in CopyFiles */,
+				B0BB237E224A014600C09415 /* amcl++_curve.h in CopyFiles */,
+				B0BB237F224A014600C09415 /* amcl++.h in CopyFiles */,
+				B0BB2380224A014600C09415 /* arch.h in CopyFiles */,
+				B0BB2381224A014600C09415 /* big_256_28.h in CopyFiles */,
+				B0BB2382224A014600C09415 /* big_384_29.h in CopyFiles */,
+				B0BB2383224A014600C09415 /* config_big_256_28.h in CopyFiles */,
+				B0BB2384224A014600C09415 /* config_big_384_29.h in CopyFiles */,
+				B0BB2385224A014600C09415 /* config_curve_BLS383.h in CopyFiles */,
+				B0BB2386224A014600C09415 /* config_curve_BN254CX.h in CopyFiles */,
+				B0BB2387224A014600C09415 /* config_field_BLS383.h in CopyFiles */,
+				B0BB2388224A014600C09415 /* config_field_BN254CX.h in CopyFiles */,
+				B0BB2389224A014600C09415 /* ecp_BLS383.h in CopyFiles */,
+				B0BB238A224A014600C09415 /* ecp_BN254CX.h in CopyFiles */,
+				B0BB238B224A014600C09415 /* ecp2_BLS383.h in CopyFiles */,
+				B0BB238C224A014600C09415 /* ecp2_BN254CX.h in CopyFiles */,
+				B0BB238D224A014600C09415 /* fp_BLS383.h in CopyFiles */,
+				B0BB238E224A014600C09415 /* fp_BN254CX.h in CopyFiles */,
+				B0BB238F224A014600C09415 /* fp2_BLS383.h in CopyFiles */,
+				B0BB2390224A014600C09415 /* fp2_BN254CX.h in CopyFiles */,
+				B0BB2391224A014600C09415 /* fp4_BLS383.h in CopyFiles */,
+				B0BB2392224A014600C09415 /* fp4_BN254CX.h in CopyFiles */,
+				B0BB2393224A014600C09415 /* fp12_BLS383.h in CopyFiles */,
+				B0BB2394224A014600C09415 /* fp12_BN254CX.h in CopyFiles */,
+				B0BB2395224A014600C09415 /* mpin_BLS383.h in CopyFiles */,
+				B0BB2396224A014600C09415 /* mpin_BN254CX.h in CopyFiles */,
+				B0BB2397224A014600C09415 /* pair_BLS383.h in CopyFiles */,
+				B0BB2398224A014600C09415 /* pair_BN254CX.h in CopyFiles */,
+				B0BB2399224A014600C09415 /* pbc_support.h in CopyFiles */,
+				B0BB239A224A014600C09415 /* randapi.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FE49FF961A1A3C2D000030A4 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 8;
@@ -1687,6 +1961,12 @@
 		968EADF220B40678001094AD /* RegCode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegCode.m; sourceTree = "<group>"; };
 		96F56EFE2046C0E6009AABC7 /* Expiration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Expiration.h; sourceTree = "<group>"; };
 		96F56EFF2046C0E6009AABC7 /* Expiration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Expiration.m; sourceTree = "<group>"; };
+		B0B983DC2243A70100407A81 /* MpinSdk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MpinSdk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0B983DF2243A70100407A81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0BB232D224A007F00C09415 /* MpinCryptoLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MpinCryptoLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0BB2330224A007F00C09415 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0BB23A0224A017E00C09415 /* MpinCoreLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MpinCoreLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0BB23A3224A017E00C09415 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C7F2FB7621BD67A500D70E41 /* amcl++_curve_BN254CX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "amcl++_curve_BN254CX.h"; sourceTree = "<group>"; };
 		C7F2FB7721BD67A500D70E41 /* fp2_BLS383.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fp2_BLS383.h; sourceTree = "<group>"; };
 		C7F2FB7821BD67A500D70E41 /* fp2_BN254CX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fp2_BN254CX.h; sourceTree = "<group>"; };
@@ -1804,6 +2084,29 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		B0B983D92243A70100407A81 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0B9841A2243A87800407A81 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0BB232A224A007F00C09415 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0C4E58F224B632F00E93021 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0BB239D224A017E00C09415 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FE49FF951A1A3C2D000030A4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -4619,10 +4922,37 @@
 			path = src;
 			sourceTree = "<group>";
 		};
+		B0B983DD2243A70100407A81 /* MpinSDKLib */ = {
+			isa = PBXGroup;
+			children = (
+				B0B983DF2243A70100407A81 /* Info.plist */,
+			);
+			path = MpinSDKLib;
+			sourceTree = "<group>";
+		};
+		B0BB232E224A007F00C09415 /* MpinCryptoLib */ = {
+			isa = PBXGroup;
+			children = (
+				B0BB2330224A007F00C09415 /* Info.plist */,
+			);
+			path = MpinCryptoLib;
+			sourceTree = "<group>";
+		};
+		B0BB23A1224A017E00C09415 /* MpinCoreLib */ = {
+			isa = PBXGroup;
+			children = (
+				B0BB23A3224A017E00C09415 /* Info.plist */,
+			);
+			path = MpinCoreLib;
+			sourceTree = "<group>";
+		};
 		FE49FF8F1A1A3C2D000030A4 = {
 			isa = PBXGroup;
 			children = (
 				FE49FF9D1A1A3C2D000030A4 /* MPinSDK */,
+				B0B983DD2243A70100407A81 /* MpinSDKLib */,
+				B0BB232E224A007F00C09415 /* MpinCryptoLib */,
+				B0BB23A1224A017E00C09415 /* MpinCoreLib */,
 				FE49FF9A1A1A3C2D000030A4 /* Frameworks */,
 				FE49FF991A1A3C2D000030A4 /* Products */,
 			);
@@ -4632,6 +4962,9 @@
 			isa = PBXGroup;
 			children = (
 				FE49FF981A1A3C2D000030A4 /* libMPinSDK.a */,
+				B0B983DC2243A70100407A81 /* MpinSdk.framework */,
+				B0BB232D224A007F00C09415 /* MpinCryptoLib.framework */,
+				B0BB23A0224A017E00C09415 /* MpinCoreLib.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -4728,7 +5061,130 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		B0B983D72243A70100407A81 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B092DF782248C35E003CD2D0 /* Expiration.h in Headers */,
+				B092DF732248C029003CD2D0 /* MPin.h in Headers */,
+				B092DF722248C021003CD2D0 /* OTP.h in Headers */,
+				B092DF712248C01D003CD2D0 /* IUser.h in Headers */,
+				B092DF852248C415003CD2D0 /* SessionDetails.h in Headers */,
+				B092DF842248C40C003CD2D0 /* ServiceDetails.h in Headers */,
+				B092DF832248C403003CD2D0 /* BridgeSignature.h in Headers */,
+				B092DF822248C3FC003CD2D0 /* MultiFactor.h in Headers */,
+				B092DF812248C3F5003CD2D0 /* RegCode.h in Headers */,
+				B092DF702248C018003CD2D0 /* MpinStatus.h in Headers */,
+				B092DF6F2248C013003CD2D0 /* MPinMFA.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0BB2328224A007F00C09415 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0BB235A224A011200C09415 /* amcl.h in Headers */,
+				B0BB235B224A011200C09415 /* amcl++_curve_BLS383.h in Headers */,
+				B0BB235C224A011200C09415 /* amcl++_curve_BN254CX.h in Headers */,
+				B0BB235D224A011200C09415 /* amcl++_curve.h in Headers */,
+				B0BB235E224A011200C09415 /* amcl++.h in Headers */,
+				B0BB235F224A011200C09415 /* arch.h in Headers */,
+				B0BB2360224A011200C09415 /* big_256_28.h in Headers */,
+				B0BB2361224A011200C09415 /* big_384_29.h in Headers */,
+				B0BB2362224A011200C09415 /* config_big_256_28.h in Headers */,
+				B0BB2363224A011200C09415 /* config_big_384_29.h in Headers */,
+				B0BB2364224A011200C09415 /* config_curve_BLS383.h in Headers */,
+				B0BB2365224A011200C09415 /* config_curve_BN254CX.h in Headers */,
+				B0BB2366224A011200C09415 /* config_field_BLS383.h in Headers */,
+				B0BB2367224A011200C09415 /* config_field_BN254CX.h in Headers */,
+				B0BB2368224A011200C09415 /* ecp_BLS383.h in Headers */,
+				B0BB2369224A011200C09415 /* ecp_BN254CX.h in Headers */,
+				B0BB236A224A011200C09415 /* ecp2_BLS383.h in Headers */,
+				B0BB236B224A011300C09415 /* ecp2_BN254CX.h in Headers */,
+				B0BB236C224A011300C09415 /* fp_BLS383.h in Headers */,
+				B0BB236D224A011300C09415 /* fp_BN254CX.h in Headers */,
+				B0BB236E224A011300C09415 /* fp2_BLS383.h in Headers */,
+				B0BB236F224A011300C09415 /* fp2_BN254CX.h in Headers */,
+				B0BB2370224A011300C09415 /* fp4_BLS383.h in Headers */,
+				B0BB2371224A011300C09415 /* fp4_BN254CX.h in Headers */,
+				B0BB2372224A011300C09415 /* fp12_BLS383.h in Headers */,
+				B0BB2373224A011300C09415 /* fp12_BN254CX.h in Headers */,
+				B0BB2374224A011300C09415 /* mpin_BLS383.h in Headers */,
+				B0BB2375224A011300C09415 /* mpin_BN254CX.h in Headers */,
+				B0BB2376224A011300C09415 /* pair_BLS383.h in Headers */,
+				B0BB2377224A011300C09415 /* pair_BN254CX.h in Headers */,
+				B0BB2378224A011300C09415 /* pbc_support.h in Headers */,
+				B0BB2379224A011300C09415 /* randapi.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0BB239B224A017E00C09415 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		B0B983DB2243A70100407A81 /* MpinSdk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B0B983E12243A70100407A81 /* Build configuration list for PBXNativeTarget "MpinSdk" */;
+			buildPhases = (
+				B0B983D72243A70100407A81 /* Headers */,
+				B0B983D82243A70100407A81 /* Sources */,
+				B0B983D92243A70100407A81 /* Frameworks */,
+				B0B983DA2243A70100407A81 /* Resources */,
+				B092DF2A2248BAFD003CD2D0 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MpinSdk;
+			productName = TestFrameworkCrypto;
+			productReference = B0B983DC2243A70100407A81 /* MpinSdk.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B0BB232C224A007F00C09415 /* MpinCryptoLib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B0BB2332224A007F00C09415 /* Build configuration list for PBXNativeTarget "MpinCryptoLib" */;
+			buildPhases = (
+				B0BB2328224A007F00C09415 /* Headers */,
+				B0BB2329224A007F00C09415 /* Sources */,
+				B0BB232A224A007F00C09415 /* Frameworks */,
+				B0BB232B224A007F00C09415 /* Resources */,
+				B0BB237A224A013700C09415 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MpinCryptoLib;
+			productName = MpinCryptoLib;
+			productReference = B0BB232D224A007F00C09415 /* MpinCryptoLib.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B0BB239F224A017E00C09415 /* MpinCoreLib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B0BB23A5224A017E00C09415 /* Build configuration list for PBXNativeTarget "MpinCoreLib" */;
+			buildPhases = (
+				B0BB239B224A017E00C09415 /* Headers */,
+				B0BB239C224A017E00C09415 /* Sources */,
+				B0BB239D224A017E00C09415 /* Frameworks */,
+				B0BB239E224A017E00C09415 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MpinCoreLib;
+			productName = MpinCoreLib;
+			productReference = B0BB23A0224A017E00C09415 /* MpinCoreLib.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		FE49FF971A1A3C2D000030A4 /* MPinSDK */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = FE49FFBB1A1A3C2D000030A4 /* Build configuration list for PBXNativeTarget "MPinSDK" */;
@@ -4754,6 +5210,20 @@
 			attributes = {
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = Certivox;
+				TargetAttributes = {
+					B0B983DB2243A70100407A81 = {
+						CreatedOnToolsVersion = 10.1;
+						ProvisioningStyle = Automatic;
+					};
+					B0BB232C224A007F00C09415 = {
+						CreatedOnToolsVersion = 10.1;
+						ProvisioningStyle = Automatic;
+					};
+					B0BB239F224A017E00C09415 = {
+						CreatedOnToolsVersion = 10.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
 			};
 			buildConfigurationList = FE49FF931A1A3C2D000030A4 /* Build configuration list for PBXProject "MPinSDK" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -4768,11 +5238,184 @@
 			projectRoot = "";
 			targets = (
 				FE49FF971A1A3C2D000030A4 /* MPinSDK */,
+				B0B983DB2243A70100407A81 /* MpinSdk */,
+				B0BB239F224A017E00C09415 /* MpinCoreLib */,
+				B0BB232C224A007F00C09415 /* MpinCryptoLib */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		B0B983DA2243A70100407A81 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0BB232B224A007F00C09415 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0BB239E224A017E00C09415 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		B0B983D82243A70100407A81 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B092DF422248BE82003CD2D0 /* Context.mm in Sources */,
+				B092DF412248BE7D003CD2D0 /* BridgeSignature.m in Sources */,
+				B092DF3F2248BE63003CD2D0 /* MPin.mm in Sources */,
+				B092DF402248BE63003CD2D0 /* MPinMFA.mm in Sources */,
+				B092DF3E2248BE41003CD2D0 /* HTTPConnector.mm in Sources */,
+				B092DF3D2248BE20003CD2D0 /* Storage.mm in Sources */,
+				B092DF3C2248BE19003CD2D0 /* RegCode.m in Sources */,
+				B092DF3B2248BE12003CD2D0 /* User.mm in Sources */,
+				B092DF3A2248BE0B003CD2D0 /* SessionDetails.m in Sources */,
+				B092DF382248BDE7003CD2D0 /* mfa_sdk.cpp in Sources */,
+				B092DF372248BDA8003CD2D0 /* amcl++.cpp in Sources */,
+				B092DF362248BD27003CD2D0 /* mpin_crypto_non_tee.cpp in Sources */,
+				B092DF352248BCFA003CD2D0 /* mpin_sdk_base.cpp in Sources */,
+				B092DF342248BC98003CD2D0 /* mpin_sdk.cpp in Sources */,
+				B092DF302248BB67003CD2D0 /* MpinStatus.m in Sources */,
+				B092DF252248B72E003CD2D0 /* CvXcode.cpp in Sources */,
+				B092DF242248B700003CD2D0 /* utils.cpp in Sources */,
+				B092DF232248B6EC003CD2D0 /* randapi.c in Sources */,
+				B092DF1E2248B463003CD2D0 /* OTP.m in Sources */,
+				B092DF1D2248B44F003CD2D0 /* MultiFactor.m in Sources */,
+				B092DF112248B138003CD2D0 /* amcl++_curve_BN254CX.cpp in Sources */,
+				B092DF122248B138003CD2D0 /* ecp_BN254CX.c in Sources */,
+				B092DF132248B138003CD2D0 /* ecp2_BN254CX.c in Sources */,
+				B092DF142248B138003CD2D0 /* fp_BN254CX.c in Sources */,
+				B092DF152248B138003CD2D0 /* fp2_BN254CX.c in Sources */,
+				B092DF162248B138003CD2D0 /* fp4_BN254CX.c in Sources */,
+				B092DF172248B138003CD2D0 /* fp12_BN254CX.c in Sources */,
+				B092DF182248B138003CD2D0 /* mpin_BN254CX.c in Sources */,
+				B092DF192248B138003CD2D0 /* pair_BN254CX.c in Sources */,
+				B092DF1A2248B138003CD2D0 /* rom_curve_BN254CX.c in Sources */,
+				B092DF1B2248B138003CD2D0 /* rom_field_BN254CX.c in Sources */,
+				B092DF102248B10B003CD2D0 /* ServiceDetails.m in Sources */,
+				B092DF0F2248B0F6003CD2D0 /* CvString.cpp in Sources */,
+				B092DF0D2248B0CF003CD2D0 /* big_256_28.c in Sources */,
+				B092DF0E2248B0CF003CD2D0 /* big_384_29.c in Sources */,
+				B092DF032248AF2B003CD2D0 /* amcl++_curve_BLS383.cpp in Sources */,
+				B092DF042248AF2B003CD2D0 /* ecp2_BLS383.c in Sources */,
+				B092DF052248AF2B003CD2D0 /* fp_BLS383.c in Sources */,
+				B092DF062248AF2B003CD2D0 /* fp2_BLS383.c in Sources */,
+				B092DF072248AF2B003CD2D0 /* fp4_BLS383.c in Sources */,
+				B092DF082248AF2B003CD2D0 /* fp12_BLS383.c in Sources */,
+				B092DF092248AF2B003CD2D0 /* mpin_BLS383.c in Sources */,
+				B092DF0A2248AF2B003CD2D0 /* pair_BLS383.c in Sources */,
+				B092DF0B2248AF2B003CD2D0 /* rom_curve_BLS383.c in Sources */,
+				B092DF0C2248AF2B003CD2D0 /* rom_field_BLS383.c in Sources */,
+				B092DF022248AEDF003CD2D0 /* ecp_BLS383.c in Sources */,
+				B092DF012248AEB0003CD2D0 /* aes.c in Sources */,
+				B092DF002248AE8B003CD2D0 /* gcm.c in Sources */,
+				B092DEFF2248AE2F003CD2D0 /* oct.c in Sources */,
+				B092DEFE2248AE04003CD2D0 /* pbc_support.c in Sources */,
+				B092DEFD2248ADE9003CD2D0 /* hash.c in Sources */,
+				B092DEFC2248ADA5003CD2D0 /* rand.c in Sources */,
+				B092DEFB2248AD95003CD2D0 /* Expiration.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0BB2329224A007F00C09415 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0BB233E224A00D300C09415 /* big_256_28.c in Sources */,
+				B0BB233F224A00D300C09415 /* big_384_29.c in Sources */,
+				B0BB2340224A00D300C09415 /* ecp_BLS383.c in Sources */,
+				B0BB2341224A00D300C09415 /* ecp_BN254CX.c in Sources */,
+				B0BB2342224A00D300C09415 /* ecp2_BLS383.c in Sources */,
+				B0BB2343224A00D300C09415 /* ecp2_BN254CX.c in Sources */,
+				B0BB2344224A00D300C09415 /* fp_BLS383.c in Sources */,
+				B0BB2345224A00D300C09415 /* fp_BN254CX.c in Sources */,
+				B0BB2346224A00D300C09415 /* fp2_BLS383.c in Sources */,
+				B0BB2347224A00D300C09415 /* fp2_BN254CX.c in Sources */,
+				B0BB2348224A00D300C09415 /* fp4_BLS383.c in Sources */,
+				B0BB2349224A00D300C09415 /* fp4_BN254CX.c in Sources */,
+				B0BB234A224A00D300C09415 /* fp12_BLS383.c in Sources */,
+				B0BB234B224A00D300C09415 /* fp12_BN254CX.c in Sources */,
+				B0BB234C224A00D300C09415 /* gcm.c in Sources */,
+				B0BB234D224A00D300C09415 /* hash.c in Sources */,
+				B0BB234E224A00D300C09415 /* mpin_BLS383.c in Sources */,
+				B0BB234F224A00D300C09415 /* mpin_BN254CX.c in Sources */,
+				B0BB2350224A00D300C09415 /* oct.c in Sources */,
+				B0BB2351224A00D300C09415 /* pair_BLS383.c in Sources */,
+				B0BB2352224A00D300C09415 /* pair_BN254CX.c in Sources */,
+				B0BB2353224A00D300C09415 /* pbc_support.c in Sources */,
+				B0BB2354224A00D300C09415 /* rand.c in Sources */,
+				B0BB2355224A00D300C09415 /* randapi.c in Sources */,
+				B0BB2356224A00D300C09415 /* rom_curve_BLS383.c in Sources */,
+				B0BB2357224A00D300C09415 /* rom_curve_BN254CX.c in Sources */,
+				B0BB2358224A00D300C09415 /* rom_field_BLS383.c in Sources */,
+				B0BB2359224A00D300C09415 /* rom_field_BN254CX.c in Sources */,
+				B0BB233B224A009A00C09415 /* amcl++_curve_BLS383.cpp in Sources */,
+				B0BB233C224A009A00C09415 /* amcl++_curve_BN254CX.cpp in Sources */,
+				B0BB233D224A009A00C09415 /* amcl++.cpp in Sources */,
+				B0BB233A224A008700C09415 /* aes.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0BB239C224A017E00C09415 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0BB23D6224A042D00C09415 /* CvXcode.cpp in Sources */,
+				B0BB23D5224A03E700C09415 /* Storage.mm in Sources */,
+				B0BB23D3224A01FF00C09415 /* CvString.cpp in Sources */,
+				B0BB23CD224A01E200C09415 /* mpin_crypto_non_tee.cpp in Sources */,
+				B0BB23CE224A01E200C09415 /* mpin_sdk_base.cpp in Sources */,
+				B0BB23CF224A01E200C09415 /* mpin_sdk.cpp in Sources */,
+				B0BB23D0224A01E200C09415 /* mfa_sdk.cpp in Sources */,
+				B0BB23D1224A01E200C09415 /* utils.cpp in Sources */,
+				B0BB23AD224A019B00C09415 /* aes.c in Sources */,
+				B0BB23AE224A019B00C09415 /* amcl++_curve_BLS383.cpp in Sources */,
+				B0BB23AF224A019B00C09415 /* amcl++_curve_BN254CX.cpp in Sources */,
+				B0BB23B0224A019B00C09415 /* amcl++.cpp in Sources */,
+				B0BB23B1224A019B00C09415 /* big_256_28.c in Sources */,
+				B0BB23B2224A019B00C09415 /* big_384_29.c in Sources */,
+				B0BB23B3224A019B00C09415 /* ecp_BLS383.c in Sources */,
+				B0BB23B4224A019B00C09415 /* ecp_BN254CX.c in Sources */,
+				B0BB23B5224A019B00C09415 /* ecp2_BLS383.c in Sources */,
+				B0BB23B6224A019B00C09415 /* ecp2_BN254CX.c in Sources */,
+				B0BB23B7224A019B00C09415 /* fp_BLS383.c in Sources */,
+				B0BB23B8224A019B00C09415 /* fp_BN254CX.c in Sources */,
+				B0BB23B9224A019B00C09415 /* fp2_BLS383.c in Sources */,
+				B0BB23BA224A019B00C09415 /* fp2_BN254CX.c in Sources */,
+				B0BB23BB224A019B00C09415 /* fp4_BLS383.c in Sources */,
+				B0BB23BC224A019B00C09415 /* fp4_BN254CX.c in Sources */,
+				B0BB23BD224A019B00C09415 /* fp12_BLS383.c in Sources */,
+				B0BB23BE224A019B00C09415 /* fp12_BN254CX.c in Sources */,
+				B0BB23BF224A019B00C09415 /* gcm.c in Sources */,
+				B0BB23C0224A019B00C09415 /* hash.c in Sources */,
+				B0BB23C1224A019B00C09415 /* mpin_BLS383.c in Sources */,
+				B0BB23C2224A019B00C09415 /* mpin_BN254CX.c in Sources */,
+				B0BB23C3224A019B00C09415 /* oct.c in Sources */,
+				B0BB23C4224A019B00C09415 /* pair_BLS383.c in Sources */,
+				B0BB23C5224A019B00C09415 /* pair_BN254CX.c in Sources */,
+				B0BB23C6224A019B00C09415 /* pbc_support.c in Sources */,
+				B0BB23C7224A019B00C09415 /* rand.c in Sources */,
+				B0BB23C8224A019B00C09415 /* randapi.c in Sources */,
+				B0BB23C9224A019B00C09415 /* rom_curve_BLS383.c in Sources */,
+				B0BB23CA224A019B00C09415 /* rom_curve_BN254CX.c in Sources */,
+				B0BB23CB224A019B00C09415 /* rom_field_BLS383.c in Sources */,
+				B0BB23CC224A019B00C09415 /* rom_field_BN254CX.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FE49FF941A1A3C2D000030A4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -5164,6 +5807,1395 @@
 			};
 			name = AppStore;
 		};
+		B0B983E22243A70100407A81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MPinSDK/MPinSDK-Prefix.pch";
+				INFOPLIST_FILE = MpinSDKLib/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.testcrypto.MpinSdk;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "../mpin-sdk-core/ext/cvshared/cpp/include/** ../mpin-sdk-core/ext/milagro-crypto-c/include/** ../mpin-sdk-core/src/**";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B0B983E32243A70100407A81 /* Stage */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MPinSDK/MPinSDK-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = MpinSDKLib/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.testcrypto.MpinSdk;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "../mpin-sdk-core/ext/cvshared/cpp/include/** ../mpin-sdk-core/ext/milagro-crypto-c/include/** ../mpin-sdk-core/src/**";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Stage;
+		};
+		B0B983E42243A70100407A81 /* Dev */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MPinSDK/MPinSDK-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = MpinSDKLib/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.testcrypto.MpinSdk;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "../mpin-sdk-core/ext/cvshared/cpp/include/** ../mpin-sdk-core/ext/milagro-crypto-c/include/** ../mpin-sdk-core/src/**";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Dev;
+		};
+		B0B983E52243A70100407A81 /* Automation-QA */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MPinSDK/MPinSDK-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = MpinSDKLib/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.testcrypto.MpinSdk;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "../mpin-sdk-core/ext/cvshared/cpp/include/** ../mpin-sdk-core/ext/milagro-crypto-c/include/** ../mpin-sdk-core/src/**";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = "Automation-QA";
+		};
+		B0B983E62243A70100407A81 /* Prod */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MPinSDK/MPinSDK-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = MpinSDKLib/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.testcrypto.MpinSdk;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "../mpin-sdk-core/ext/cvshared/cpp/include/** ../mpin-sdk-core/ext/milagro-crypto-c/include/** ../mpin-sdk-core/src/**";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Prod;
+		};
+		B0B983E72243A70100407A81 /* AppStore */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MPinSDK/MPinSDK-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = MpinSDKLib/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.testcrypto.MpinSdk;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "../mpin-sdk-core/ext/cvshared/cpp/include/** ../mpin-sdk-core/ext/milagro-crypto-c/include/** ../mpin-sdk-core/src/**";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = AppStore;
+		};
+		B0B983E82243A70100407A81 /* QA */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MPinSDK/MPinSDK-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = MpinSDKLib/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.testcrypto.MpinSdk;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "../mpin-sdk-core/ext/cvshared/cpp/include/** ../mpin-sdk-core/ext/milagro-crypto-c/include/** ../mpin-sdk-core/src/**";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = QA;
+		};
+		B0BB2333224A007F00C09415 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MPinSDK/MPinSDK-Prefix.pch";
+				INFOPLIST_FILE = MpinCryptoLib/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.miracl.MpinCryptoLib;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "../mpin-sdk-core/ext/cvshared/cpp/include/** ../mpin-sdk-core/ext/milagro-crypto-c/include/** ../mpin-sdk-core/ext/boost";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B0BB2334224A007F00C09415 /* Stage */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MPinSDK/MPinSDK-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = MpinCryptoLib/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.miracl.MpinCryptoLib;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "../mpin-sdk-core/ext/cvshared/cpp/include/** ../mpin-sdk-core/ext/milagro-crypto-c/include/** ../mpin-sdk-core/ext/boost";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Stage;
+		};
+		B0BB2335224A007F00C09415 /* Dev */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MPinSDK/MPinSDK-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = MpinCryptoLib/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.miracl.MpinCryptoLib;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "../mpin-sdk-core/ext/cvshared/cpp/include/** ../mpin-sdk-core/ext/milagro-crypto-c/include/** ../mpin-sdk-core/ext/boost";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Dev;
+		};
+		B0BB2336224A007F00C09415 /* Automation-QA */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MPinSDK/MPinSDK-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = MpinCryptoLib/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.miracl.MpinCryptoLib;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "../mpin-sdk-core/ext/cvshared/cpp/include/** ../mpin-sdk-core/ext/milagro-crypto-c/include/** ../mpin-sdk-core/ext/boost";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = "Automation-QA";
+		};
+		B0BB2337224A007F00C09415 /* Prod */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MPinSDK/MPinSDK-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = MpinCryptoLib/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.miracl.MpinCryptoLib;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "../mpin-sdk-core/ext/cvshared/cpp/include/** ../mpin-sdk-core/ext/milagro-crypto-c/include/** ../mpin-sdk-core/ext/boost";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Prod;
+		};
+		B0BB2338224A007F00C09415 /* AppStore */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MPinSDK/MPinSDK-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = MpinCryptoLib/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.miracl.MpinCryptoLib;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "../mpin-sdk-core/ext/cvshared/cpp/include/** ../mpin-sdk-core/ext/milagro-crypto-c/include/** ../mpin-sdk-core/ext/boost";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = AppStore;
+		};
+		B0BB2339224A007F00C09415 /* QA */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MPinSDK/MPinSDK-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = MpinCryptoLib/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.miracl.MpinCryptoLib;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "../mpin-sdk-core/ext/cvshared/cpp/include/** ../mpin-sdk-core/ext/milagro-crypto-c/include/** ../mpin-sdk-core/ext/boost";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = QA;
+		};
+		B0BB23A6224A017E00C09415 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_PREFIX_HEADER = "MPinSDK/MPinSDK-Prefix.pch";
+				INFOPLIST_FILE = MpinCoreLib/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.miracl.MpinCoreLib;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "../mpin-sdk-core/ext/cvshared/cpp/include/** ../mpin-sdk-core/ext/milagro-crypto-c/include/** ../mpin-sdk-core/src/** ../mpin-sdk-core/ext/boost/**";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B0BB23A7224A017E00C09415 /* Stage */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "MPinSDK/MPinSDK-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = MpinCoreLib/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.miracl.MpinCoreLib;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "../mpin-sdk-core/ext/cvshared/cpp/include/** ../mpin-sdk-core/ext/milagro-crypto-c/include/** ../mpin-sdk-core/src/** ../mpin-sdk-core/ext/boost/**";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Stage;
+		};
+		B0BB23A8224A017E00C09415 /* Dev */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "MPinSDK/MPinSDK-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = MpinCoreLib/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.miracl.MpinCoreLib;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "../mpin-sdk-core/ext/cvshared/cpp/include/** ../mpin-sdk-core/ext/milagro-crypto-c/include/** ../mpin-sdk-core/src/** ../mpin-sdk-core/ext/boost/**";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Dev;
+		};
+		B0BB23A9224A017E00C09415 /* Automation-QA */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "MPinSDK/MPinSDK-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = MpinCoreLib/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.miracl.MpinCoreLib;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "../mpin-sdk-core/ext/cvshared/cpp/include/** ../mpin-sdk-core/ext/milagro-crypto-c/include/** ../mpin-sdk-core/src/** ../mpin-sdk-core/ext/boost/**";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = "Automation-QA";
+		};
+		B0BB23AA224A017E00C09415 /* Prod */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "MPinSDK/MPinSDK-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = MpinCoreLib/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.miracl.MpinCoreLib;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "../mpin-sdk-core/ext/cvshared/cpp/include/** ../mpin-sdk-core/ext/milagro-crypto-c/include/** ../mpin-sdk-core/src/** ../mpin-sdk-core/ext/boost/**";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Prod;
+		};
+		B0BB23AB224A017E00C09415 /* AppStore */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "MPinSDK/MPinSDK-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = MpinCoreLib/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.miracl.MpinCoreLib;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "../mpin-sdk-core/ext/cvshared/cpp/include/** ../mpin-sdk-core/ext/milagro-crypto-c/include/** ../mpin-sdk-core/src/** ../mpin-sdk-core/ext/boost/**";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = AppStore;
+		};
+		B0BB23AC224A017E00C09415 /* QA */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "MPinSDK/MPinSDK-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = MpinCoreLib/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.miracl.MpinCoreLib;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "../mpin-sdk-core/ext/cvshared/cpp/include/** ../mpin-sdk-core/ext/milagro-crypto-c/include/** ../mpin-sdk-core/src/** ../mpin-sdk-core/ext/boost/**";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = QA;
+		};
 		FE49FFB91A1A3C2D000030A4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -5300,6 +7332,48 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		B0B983E12243A70100407A81 /* Build configuration list for PBXNativeTarget "MpinSdk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0B983E22243A70100407A81 /* Debug */,
+				B0B983E32243A70100407A81 /* Stage */,
+				B0B983E42243A70100407A81 /* Dev */,
+				B0B983E52243A70100407A81 /* Automation-QA */,
+				B0B983E62243A70100407A81 /* Prod */,
+				B0B983E72243A70100407A81 /* AppStore */,
+				B0B983E82243A70100407A81 /* QA */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B0BB2332224A007F00C09415 /* Build configuration list for PBXNativeTarget "MpinCryptoLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0BB2333224A007F00C09415 /* Debug */,
+				B0BB2334224A007F00C09415 /* Stage */,
+				B0BB2335224A007F00C09415 /* Dev */,
+				B0BB2336224A007F00C09415 /* Automation-QA */,
+				B0BB2337224A007F00C09415 /* Prod */,
+				B0BB2338224A007F00C09415 /* AppStore */,
+				B0BB2339224A007F00C09415 /* QA */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B0BB23A5224A017E00C09415 /* Build configuration list for PBXNativeTarget "MpinCoreLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0BB23A6224A017E00C09415 /* Debug */,
+				B0BB23A7224A017E00C09415 /* Stage */,
+				B0BB23A8224A017E00C09415 /* Dev */,
+				B0BB23A9224A017E00C09415 /* Automation-QA */,
+				B0BB23AA224A017E00C09415 /* Prod */,
+				B0BB23AB224A017E00C09415 /* AppStore */,
+				B0BB23AC224A017E00C09415 /* QA */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
 		FE49FF931A1A3C2D000030A4 /* Build configuration list for PBXProject "MPinSDK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

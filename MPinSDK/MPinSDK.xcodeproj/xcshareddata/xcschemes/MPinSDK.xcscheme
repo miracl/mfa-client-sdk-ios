@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "FE49FF971A1A3C2D000030A4"
-               BuildableName = "libMPinSDK.a"
-               BlueprintName = "MPinSDK"
+               BlueprintIdentifier = "B0B983DB2243A70100407A81"
+               BuildableName = "MpinSdk.framework"
+               BlueprintName = "MpinSdk"
                ReferencedContainer = "container:MPinSDK.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -29,15 +29,6 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "FE49FF971A1A3C2D000030A4"
-            BuildableName = "libMPinSDK.a"
-            BlueprintName = "MPinSDK"
-            ReferencedContainer = "container:MPinSDK.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -54,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "FE49FF971A1A3C2D000030A4"
-            BuildableName = "libMPinSDK.a"
-            BlueprintName = "MPinSDK"
+            BlueprintIdentifier = "B0B983DB2243A70100407A81"
+            BuildableName = "MpinSdk.framework"
+            BlueprintName = "MpinSdk"
             ReferencedContainer = "container:MPinSDK.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -64,7 +55,7 @@
       </AdditionalOptions>
    </LaunchAction>
    <ProfileAction
-      buildConfiguration = "Release"
+      buildConfiguration = "Debug"
       shouldUseLaunchSchemeArgsEnv = "YES"
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
@@ -72,9 +63,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "FE49FF971A1A3C2D000030A4"
-            BuildableName = "libMPinSDK.a"
-            BlueprintName = "MPinSDK"
+            BlueprintIdentifier = "B0B983DB2243A70100407A81"
+            BuildableName = "MpinSdk.framework"
+            BlueprintName = "MpinSdk"
             ReferencedContainer = "container:MPinSDK.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -83,7 +74,7 @@
       buildConfiguration = "Debug">
    </AnalyzeAction>
    <ArchiveAction
-      buildConfiguration = "Prod"
+      buildConfiguration = "Debug"
       revealArchiveInOrganizer = "YES">
    </ArchiveAction>
 </Scheme>
