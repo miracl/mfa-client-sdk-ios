@@ -18,8 +18,8 @@
  */
 
 #import <Foundation/Foundation.h>
-#import "mpin_sdk_base.h"
 #import "IUser.h"
+#import <MpinCoreLib/mpin_sdk_base.h>
 
 typedef MPinSDKBase::UserPtr UserPtr;
 

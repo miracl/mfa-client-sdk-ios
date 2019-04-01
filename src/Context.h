@@ -21,7 +21,7 @@
 #define CONTEXT_H_
 
 #include "def.h"
-#include "mpin_sdk_base.h"
+#include <MpinCoreLib/mpin_sdk_base.h>
 
 namespace sdk_non_tee {
 

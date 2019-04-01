@@ -18,7 +18,7 @@
  */
 
 #import "MPinMFA.h"
-#import "mfa_sdk.h"
+#import <MpinCoreLib/mfa_sdk.h>
 #import "Context.h"
 #import <vector>
 #import "User.h"

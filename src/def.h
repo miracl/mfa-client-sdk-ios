@@ -20,7 +20,7 @@
 #ifndef DEF_H_
 #define DEF_H_
 
-#include "mpin_sdk_base.h"
+#include <MpinCoreLib/mpin_sdk_base.h>
 
 #define RELEASE(pointer)  \
     if ((pointer) != NULL ) { \

@@ -18,7 +18,7 @@
  */
 
 #import "MPin.h"
-#import "mpin_sdk.h"
+#import <MpinCoreLib/mpin_sdk.h>
 #import "Context.h"
 #import <vector>
 #import "User.h"
