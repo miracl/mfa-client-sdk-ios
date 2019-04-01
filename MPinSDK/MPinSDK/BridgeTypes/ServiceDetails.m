@@ -20,12 +20,11 @@
 #import "ServiceDetails.h"
 
 @implementation ServiceDetails
-- (id) initWith:(NSString * ) name backendUrl:(NSString *) backendUrl rpsPrefix:(NSString *) rpsPrefix logoUrl:(NSString *) logoUrl {
+- (id) initWith:(NSString * ) name backendUrl:(NSString *) backendUrl logoUrl:(NSString *) logoUrl {
     self = [super init];
     if (self) {
         self.name = name;
         self.backendUrl = backendUrl;
-        self.rpsPrefix = rpsPrefix;
         self.logoUrl = logoUrl;
     }
     return self;

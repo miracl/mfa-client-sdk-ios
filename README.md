@@ -81,16 +81,12 @@ If for some reason a request is about to be done to a non-trusted domain, the SD
 This method will clear all the currently set trusted domains.
 
 ##### `(MpinStatus*) TestBackend: (const NSString*) url;`
-##### `(MpinStatus*) TestBackend: (const NSString*) url rpsPrefix: (const NSString*) rpsPrefix;`
 This method will test whether `url` is a valid back-end URL by trying to retrieve Client Settings from it.
-Optionally, a custom RPS prefix might be specified if it was customized at the back-end and is different than the default `"rps"`.
 If the back-end URL is a valid one, the method will return status `OK`.
 
 ##### `(MpinStatus*) SetBackend: (const NSString*) url;`
-##### `(MpinStatus*) SetBackend: (const NSString*) url rpsPrefix: (const NSString*) rpsPrefix;`
 This method will change the currently configured back-end in the SDK.
 `url` is the new back-end URL that should be used.
-Optionally, a custom RPS prefix might be specified if it was customized at the back-end and is different than the default `"rps"`.
 If successful, the method will return status `OK`.
 
 ##### `(id<IUser>) MakeNewUser: (const NSString*) identity;`
@@ -296,11 +292,9 @@ The customers can see those IDs through the _Platform Portal_.
 When customers use the SDK to build their own applications to authenticate users using the Platform, the _Client ID_ has to be provided using this method. 
 
 ##### `(MpinStatus*) TestBackend: (const NSString*) url;`
-##### `(MpinStatus*) TestBackend: (const NSString*) url rpsPrefix: (NSString*) rpsPrefix;`
 Identical and analogical to `MPin`'s [`TestBackend`](#mpinstatus-testbackend-const-nsstring-url)
 
 ##### `(MpinStatus*) SetBackend: (const NSString*) url;`
-##### `(MpinStatus*) SetBackend: (const NSString*) url rpsPrefix: (NSString*) rpsPrefix;`
 Identical and analogical to `MPin`'s [`SetBackend`](#mpinstatus-setbackend-const-nsstring-url)
 
 ##### `(id<IUser>) MakeNewUser: (const NSString*) identity;`
@@ -333,14 +327,12 @@ The returned `ServiceDetails` look as follows:
 
 @property (nonatomic, strong) NSString* name;
 @property (nonatomic, strong) NSString* backendUrl;
-@property (nonatomic, strong) NSString* rpsPrefix;
 @property (nonatomic, strong) NSString* logoUrl;
 
 @end
 ```
 * `name` is the service readable name
 * `backendUrl` is the URL of the service backend. This URL has to be set either via the SDK `initSDK` method or using  `SetBackend`
-* `rpsPrefix` is RPS prefix setting which is also provided together with `backendUrl` while setting a backend
 * `logoUrl` is the URL of the service logo. The logo is a UI element that could be used by the app.
 
 ##### `(SessionDetails*) GetSessionDetails: (NSString*) accessCode;`

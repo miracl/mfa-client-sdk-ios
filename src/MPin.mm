@@ -27,7 +27,6 @@ static MPinSDK mpin;
 static BOOL isInitialized = false;
 
 /// TEMPORARY FIX
-static NSString * rpsURL;
 static NSLock * lock = [[NSLock alloc] init];
 
 typedef MPinSDK::UserPtr UserPtr;
@@ -35,11 +34,6 @@ typedef MPinSDK::Status Status;
 typedef sdk_non_tee::Context Context;
 
 @implementation MPin
-
-/// TEMPORARY FIX
-+ (NSString*) getRPSUrl {
-    return rpsURL;
-}
 
 + (void) initSDK {
     
@@ -114,25 +108,6 @@ typedef sdk_non_tee::Context Context;
 + (MpinStatus*) SetBackend:(const NSString * ) url {
     [lock lock];
     Status s = mpin.SetBackend((url == nil)?(""):([url UTF8String]));
-    [lock unlock];
-    return [[MpinStatus alloc] initWith:(MPinStatus)s.GetStatusCode() errorMessage:[NSString stringWithUTF8String:s.GetErrorMessage().c_str()]];
-}
-
-+ (MpinStatus*) TestBackend:(const NSString * ) url rpsPrefix:(NSString *) rpsPrefix {
-    if (rpsPrefix == nil || rpsPrefix.length == 0) {
-        return [MPin TestBackend:url];
-    }
-    [lock lock];
-    Status s = mpin.TestBackend([url UTF8String], [rpsPrefix UTF8String]);
-    [lock unlock];
-    return [[MpinStatus alloc] initWith:(MPinStatus)s.GetStatusCode() errorMessage:[NSString stringWithUTF8String:s.GetErrorMessage().c_str()]];
-}
-+ (MpinStatus*) SetBackend:(const NSString * ) url rpsPrefix:(NSString *) rpsPrefix {
-    if (rpsPrefix == nil || rpsPrefix.length == 0) {
-        return [MPin SetBackend:url];
-    }
-    [lock lock];
-    Status s = mpin.SetBackend([url UTF8String],[rpsPrefix UTF8String]);
     [lock unlock];
     return [[MpinStatus alloc] initWith:(MPinStatus)s.GetStatusCode() errorMessage:[NSString stringWithUTF8String:s.GetErrorMessage().c_str()]];
 }

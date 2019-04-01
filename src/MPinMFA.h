@@ -40,8 +40,6 @@
 
 + (MpinStatus*) TestBackend:(const NSString*)url;
 + (MpinStatus*) SetBackend:(const NSString*)url;
-+ (MpinStatus*) TestBackend:(const NSString*)url rpsPrefix:(NSString*)rpsPrefix;
-+ (MpinStatus*) SetBackend:(const NSString*)url rpsPrefix:(NSString*)rpsPrefix;
 
 + (id<IUser>) MakeNewUser:(const NSString*)identity;
 + (id<IUser>) MakeNewUser:(const NSString*)identity deviceName:(const NSString*)devName;
@@ -56,8 +54,6 @@
 
 + (id<IUser>) getIUserById:(NSString *) userId;
 + (NSString *) GetClientParam:(const NSString *) key;
-
-+ (NSString*) getRPSUrl;
 
 + (MpinStatus*) GetServiceDetails:(NSString *) url serviceDetails:(ServiceDetails **)sd;
 + (void) SetClientId:(NSString *) clientId;
