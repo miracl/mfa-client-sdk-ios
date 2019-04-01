@@ -69,10 +69,6 @@ namespace net {
         NSString * strURL = [NSString stringWithUTF8String:url.c_str()];
         strURL = [strURL stringByReplacingOccurrencesOfString:@"wss://" withString:@"https://"];
         strURL = [strURL stringByReplacingOccurrencesOfString:@"ws://" withString:@"http://"];
-    
-        if ( [strURL hasPrefix:@"/"] ) {
-             strURL = [[MPin getRPSUrl] stringByAppendingString:strURL];
-        }
         
         if(!m_queryParams.empty()) {
             NSString *queryString = @"";

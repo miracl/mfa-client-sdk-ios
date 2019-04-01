@@ -35,8 +35,6 @@
 
 + (MpinStatus*) TestBackend:(const NSString*)url;
 + (MpinStatus*) SetBackend:(const NSString*)url;
-+ (MpinStatus*) TestBackend:(const NSString*)url rpsPrefix:(NSString*)rpsPrefix;
-+ (MpinStatus*) SetBackend:(const NSString*)url rpsPrefix:(NSString*)rpsPrefix;
 
 + (id<IUser>) MakeNewUser:(const NSString*)identity;
 + (id<IUser>) MakeNewUser:(const NSString*)identity
@@ -50,8 +48,7 @@
 
 + (id<IUser>) getIUserById:(NSString *) userId;
 + (NSString *) GetClientParam:(const NSString *) key;
-/// TEMPORARY FIX
-+ (NSString*) getRPSUrl;
+
 
 + (MpinStatus*) StartRegistration:(const id<IUser>)user;
 + (MpinStatus*) StartRegistration:(const id<IUser>)user userData:(NSString *) userData;

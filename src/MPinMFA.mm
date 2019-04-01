@@ -26,8 +26,6 @@
 static MfaSDK mpin;
 static BOOL isInitialized = false;
 
-/// TEMPORARY FIX
-static NSString * rpsURL;
 static NSLock * lock = [[NSLock alloc] init];
 
 typedef MfaSDK::UserPtr         UserPtr;
@@ -36,11 +34,6 @@ typedef sdk_non_tee::Context    Context;
 typedef MfaSDK::Signature       Signature;
 
 @implementation MPinMFA
-
-/// TEMPORARY FIX
-+ (NSString*) getRPSUrl {
-    return rpsURL;
-}
 
 + (void) initSDK {
     if (isInitialized) return;
@@ -112,26 +105,6 @@ typedef MfaSDK::Signature       Signature;
 + (MpinStatus*) SetBackend:(const NSString * ) url {
     [lock lock];
     Status s = mpin.SetBackend((url == nil)?(""):([url UTF8String]));
-    [lock unlock];
-    return [[MpinStatus alloc] initWith:(MPinStatus)s.GetStatusCode() errorMessage:[NSString stringWithUTF8String:s.GetErrorMessage().c_str()]];
-}
-
-+ (MpinStatus*) TestBackend:(const NSString * ) url rpsPrefix:(NSString *) rpsPrefix {
-    if (rpsPrefix == nil || rpsPrefix.length == 0) {
-        return [MPinMFA TestBackend:url];
-    }
-    [lock lock];
-    Status s = mpin.TestBackend([url UTF8String], [rpsPrefix UTF8String]);
-    [lock unlock];
-    return [[MpinStatus alloc] initWith:(MPinStatus)s.GetStatusCode() errorMessage:[NSString stringWithUTF8String:s.GetErrorMessage().c_str()]];
-}
-
-+ (MpinStatus*) SetBackend:(const NSString * ) url rpsPrefix:(NSString *) rpsPrefix {
-    if (rpsPrefix == nil || rpsPrefix.length == 0) {
-        return [MPinMFA SetBackend:url];
-    }
-    [lock lock];
-    Status s = mpin.SetBackend([url UTF8String],[rpsPrefix UTF8String]);
     [lock unlock];
     return [[MpinStatus alloc] initWith:(MPinStatus)s.GetStatusCode() errorMessage:[NSString stringWithUTF8String:s.GetErrorMessage().c_str()]];
 }
@@ -215,7 +188,6 @@ typedef MfaSDK::Signature       Signature;
     [lock unlock];
     *sd = [[ServiceDetails alloc] initWith:[NSString stringWithUTF8String:c_sd.name.c_str()]
                                 backendUrl:[NSString stringWithUTF8String:c_sd.backendUrl.c_str()]
-                                 rpsPrefix:[NSString stringWithUTF8String:c_sd.rpsPrefix.c_str()]
                                    logoUrl:[NSString stringWithUTF8String:c_sd.logoUrl.c_str()]];
     return [[MpinStatus alloc] initWith:(MPinStatus)s.GetStatusCode() errorMessage:[NSString stringWithUTF8String:s.GetErrorMessage().c_str()]];
 }
