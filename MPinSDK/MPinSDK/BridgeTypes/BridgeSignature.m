@@ -1,11 +1,3 @@
-//
-//  Signature.m
-//  MPinSDK
-//
-//  Created by Tihomir Ganev on 11/7/17.
-//  Copyright © 2017 Certivox. All rights reserved.
-//
-
 #import "BridgeSignature.h"
 
 @implementation BridgeSignature
