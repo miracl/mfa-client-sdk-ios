@@ -382,7 +382,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1010;
-				ORGANIZATIONNAME = "";
+				ORGANIZATIONNAME = MIRACL;
 				TargetAttributes = {
 					B02196C9226DCEC200BF3A71 = {
 						CreatedOnToolsVersion = 10.1;
