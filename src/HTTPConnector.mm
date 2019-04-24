@@ -18,7 +18,6 @@
  */
 
 #include "HTTPConnector.h"
-#import "MPin.h"
 #import <UIKit/UIKit.h>
 
 static NSInteger constIntTimeoutInterval = 30;

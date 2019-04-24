@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1010"
+   LastUpgradeVersion = "1020"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B0B983DB2243A70100407A81"
-               BuildableName = "MpinSdk.framework"
-               BlueprintName = "MpinSdk"
-               ReferencedContainer = "container:MPinSDK.xcodeproj">
+               BlueprintIdentifier = "FE49FF971A1A3C2D000030A4"
+               BuildableName = "libMfaSDK.a"
+               BlueprintName = "MfaSDK"
+               ReferencedContainer = "container:MfaSDK.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -45,10 +45,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B0B983DB2243A70100407A81"
-            BuildableName = "MpinSdk.framework"
-            BlueprintName = "MpinSdk"
-            ReferencedContainer = "container:MPinSDK.xcodeproj">
+            BlueprintIdentifier = "FE49FF971A1A3C2D000030A4"
+            BuildableName = "libMfaSDK.a"
+            BlueprintName = "MfaSDK"
+            ReferencedContainer = "container:MfaSDK.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -63,10 +63,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B0B983DB2243A70100407A81"
-            BuildableName = "MpinSdk.framework"
-            BlueprintName = "MpinSdk"
-            ReferencedContainer = "container:MPinSDK.xcodeproj">
+            BlueprintIdentifier = "FE49FF971A1A3C2D000030A4"
+            BuildableName = "libMfaSDK.a"
+            BlueprintName = "MfaSDK"
+            ReferencedContainer = "container:MfaSDK.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>
