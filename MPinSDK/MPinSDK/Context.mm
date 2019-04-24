@@ -52,4 +52,4 @@ namespace sdk_non_tee {
         RELEASE(m_pInstance)
     }
     
-} /* namespace store */
+}

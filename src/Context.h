@@ -25,5 +25,5 @@ private:
 	IStorage * m_pIstorageNonSecure;
 };
 
-} /* namespace store */
-#endif /* CONTEXT_H_ */
+}
+#endif

@@ -31,4 +31,4 @@ class JNIOperationFailureException : public Exception {
 		JNIOperationFailureException ( const String & aMessage ) : Exception(aMessage) {}
 };
 
-#endif /* EXCEPTIONS_H_ */
+#endif

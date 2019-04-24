@@ -19,5 +19,5 @@ namespace CvShared
 	typedef std::wstring	Wstring;
 }
 
-#endif	/* CVCOMMON_H */
+#endif
 

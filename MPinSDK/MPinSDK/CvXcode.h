@@ -20,5 +20,5 @@ namespace CvShared
 	}
 }
 
-#endif	/* CVXCODE_H */
+#endif
 
