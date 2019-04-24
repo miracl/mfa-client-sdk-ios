@@ -24,5 +24,5 @@ class Storage: public IStorage {
         bool m_isMpinType;
 };
 
-} /* namespace store */
-#endif /* STORAGE_H_ */
+}
+#endif

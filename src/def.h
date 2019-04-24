@@ -35,4 +35,4 @@ static const String kNegativeString = "-1";
  */
 #define ARR_LEN(x) ((int)(sizeof(x) / sizeof((x)[0])))
 
-#endif /* DEF_H_ */
+#endif

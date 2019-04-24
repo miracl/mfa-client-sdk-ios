@@ -39,4 +39,4 @@ namespace net {
 	};
 }
 
-#endif /* HTTPCONNECTOR_H_ */
+#endif

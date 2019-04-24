@@ -99,5 +99,5 @@ CvString& CvString::operator=( long aInt )
 std::wstring StringToWstring( const std::string& str );
 std::string WstringToString( const std::wstring& str );
 
-#endif	/* CVSTRING_H */
+#endif
 
