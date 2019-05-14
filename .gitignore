@@ -35,3 +35,7 @@ build/
 
 *.xccheckout
 xcuserdata/
+
+MfaSDK/MfaSDK.xcodeproj/project.xcworkspace/contents.xcworkspacedata
+MfaSDK/MfaSDK.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
+MfaSDK/MfaSDK.xcodeproj/project.xcworkspace/xcshareddata/MPinSDK.xcscmblueprint

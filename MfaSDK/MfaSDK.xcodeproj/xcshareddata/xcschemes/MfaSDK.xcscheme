@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "FE49FF971A1A3C2D000030A4"
-               BuildableName = "libMPinSDK.a"
-               BlueprintName = "MPinSDK"
-               ReferencedContainer = "container:MPinSDK.xcodeproj">
+               BuildableName = "libMfaSDK.a"
+               BlueprintName = "MfaSDK"
+               ReferencedContainer = "container:MfaSDK.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -46,9 +46,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "FE49FF971A1A3C2D000030A4"
-            BuildableName = "libMPinSDK.a"
-            BlueprintName = "MPinSDK"
-            ReferencedContainer = "container:MPinSDK.xcodeproj">
+            BuildableName = "libMfaSDK.a"
+            BlueprintName = "MfaSDK"
+            ReferencedContainer = "container:MfaSDK.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -64,9 +64,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "FE49FF971A1A3C2D000030A4"
-            BuildableName = "libMPinSDK.a"
-            BlueprintName = "MPinSDK"
-            ReferencedContainer = "container:MPinSDK.xcodeproj">
+            BuildableName = "libMfaSDK.a"
+            BlueprintName = "MfaSDK"
+            ReferencedContainer = "container:MfaSDK.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>
