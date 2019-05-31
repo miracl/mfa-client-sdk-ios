@@ -19,14 +19,14 @@ note over rpa:
 end note
 
 
-mobapp->mobsdk: setCid(<clientId>)
+mobapp->mobsdk: [MPinMFA setCid:<clientId>]
 
-mobapp->mobsdk: setBackend(<backendUrl>)
+mobapp->mobsdk: [MPinMFA setBackend:<backendUrl>]
 mobsdk->mfa: Get /clientSettings,
 mfa-->mobsdk: OK, data: { clientSettings }
 mobsdk-->mobapp: Status OK
 
-mobapp->mobsdk: listUsers(&usersList)
+mobapp->mobsdk: [MPinMFA listUsers]
 note right of mobapp
 	NOTE: The diagram assumes that there is a completed registration. 
 	The registration flow is listed separately.
@@ -35,13 +35,13 @@ mobsdk-->mobapp: Status OK, populated <usersList>
 
 mobapp->rpa: GET /authzurl
 rpa-->mobapp: OK, data: { authorizeURL }
-mobapp->mobsdk: getAccessCode(<authorizeURL>, &accessCode)
+mobapp->mobsdk: [MPinMFA GetAccessCode:<authorizeURL> accessCode:&accessCode]
 mobsdk->mfa: POST /authorizeURL
 mfa-->mobsdk: OK, data: { webOTT, qrURL, accessURL }
 mobsdk->mobsdk: Extract accessCode from qrURL
 mobsdk-->mobapp: Status OK, populated <accessCode>
 
-mobapp->mobsdk: startAuthentication(<user>, <accessCode>)
+mobapp->mobsdk: [MPinMFA StartAuthentication:<user> accessCode:<accessCode>]
 mobsdk->mfa: POST /codeStatus, data: { status, wid, userId }
 mfa-->mobsdk: OK
 mobsdk<-->mfa: Fetch Time Permits, if required
@@ -49,7 +49,7 @@ mobsdk->mobapp: Status OK
 
 mobapp->mobapp: Get PIN from end-user
 
-mobapp->mobsdk: finishAuthentication(<user>, <PIN>, <accessCode>, &authzCode)
+mobapp->mobsdk: [MPinMFA FinishAuthentication:<user> pin:<PIN> pin1:nil accessCode:<accessCode> authzCode:&authzCode]
 
 mobsdk->mfa: POST /pass1, data: { mpin-id, dtas, U }
 mfa->mfa: Generate y

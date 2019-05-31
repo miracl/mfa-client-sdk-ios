@@ -11,13 +11,13 @@ note over codepad
 end note
 
 app<-->codepad: Scan QR Code of the form <landing-url>#<access-code>
-app->sdk: getServiceDetails(<landing-url>, &serviceDetails)
+app->sdk: [MPinMFA GetServiceDetails:<landing-url> serviceDetails: &serviceDetails]
 sdk-->app: Status OK, populated <serviceDetails>
-app->sdk: setBackend(<backendUrl>)
+app->sdk: [MPinMFA SetBackend:<backendUrl>]
 sdk-->app: Status OK
-app->sdk: getSessionDetails(<accessCode>, &sessionDetails)
+app->sdk: [MPinMFA GetSessionDetails:<accessCode>]
 sdk-->app: Status OK, populated <sessionDetails>
-app->sdk: listUsers(&usersList)
+app->sdk: [MPinMFA listUsers]
 sdk-->app: Status OK, populated <usersList>
 alt <preroll-id> is not empty
     alt <preroll-id> is not in <usersList>
@@ -35,8 +35,8 @@ else
         app->app: Select existing identity
     end alt
 end alt
-app->sdk: startAuthentication(<identity>, <accessCode>)
+app->sdk: [MPinMFA StartAuthentication:<identity> accessCode: <accessCode>]
 sdk-->app: Status OK
 app->app: Read <PIN> from end user
-app->sdk: finishAuthentication(<identity>, <PIN>, <accessCode>)
+app->sdk: [MPinMFA FinishAuthentication:<identity> pin0:<PIN> pin1:nil accessCode:<accessCode>](, , )
 sdk-->app: Status OK
