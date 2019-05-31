@@ -13,19 +13,19 @@ note over codepad
 end note
 
 app<-->codepad: Scan QR Code of the form <landing-url>#<access-code>
-app->sdk: getServiceDetails(<landing-url>, &serviceDetails)
+app->sdk: [MPinMFA GetServiceDetails:<landing-url> serviceDetails:&serviceDetails]
 sdk->landing: GET <landing-url>/service
 landing-->sdk: OK, data: <serviceDetails>
 sdk-->app: Status OK, populated <serviceDetails>
-app->sdk: setBackend(<backendUrl>)
+app->sdk: [MPinMFA SetBackend:<backendUrl>]
 sdk->mfa: GET clientSetting
 mfa-->sdk: OK, data: <clientSettings>
 sdk-->app: Status OK
-app->sdk: getSessionDetails(<accessCode>, &sessionDetails)
+app->sdk: [MPinMFA GetSessionDetails:<accessCode>]
 sdk->mfa: POST /codeStatus, data: { status, wid }
 mfa-->sdk: OK, data: <sessionDetails>
 sdk-->app: Status OK, populated <sessionDetails>
-app->sdk: listUsers(&usersList)
+app->sdk: [MPinMFA listUsers]
 sdk-->app: Status OK, populated <usersList>
 alt <preroll-id> is not empty
     alt <preroll-id> is not in <usersList>
@@ -43,13 +43,13 @@ else
         app->app: Select existing identity
     end alt
 end alt
-app->sdk: startAuthentication(<identity>, <accessCode>)
+app->sdk: [MPinMFA StartAuthentication:<identity> accessCode:<accessCode>]
 sdk->mfa: POST /codeStatus, data: { status, wid, userId }
 mfa-->sdk: OK
 sdk<-->mfa: Fetch Time Permits, if required
 sdk-->app: Status OK
 app->app: Read <PIN> from end user
-app->sdk: finishAuthentication(<identity>, <PIN>, <accessCode>)
+app->sdk: [MPinMFA FinishAuthentication:<identity> pin0:<PIN> pin1:nil accessCode:<accessCode>]
 sdk->mfa: POST /pass1, data: { mpin-id, dtas, U }
 mfa->mfa: Generate y
 mfa->mfa: Store session data <mpin-id, dtas, y>

@@ -4,10 +4,10 @@ participant Mobile App as mobapp
 participant Mobile SDK as mobsdk
 participant RPA Backend as rpa
 
-mobapp->mobsdk: setCid(<clientId>)
-mobapp->mobsdk: setBackend(<backendUrl>)
+mobapp->mobsdk: [MPinMFA SetClientId:<clientId>]
+mobapp->mobsdk: [MPinMFA SetBackend:<backendUrl>]
 mobsdk-->mobapp: Status OK
-mobapp->mobsdk: listUsers(&usersList)
+mobapp->mobsdk: [MPinMFA listUsers]
 note right of mobapp
 	NOTE: The diagram assumes that there is a completed registration. 
 	The registration flow is listed separately.
@@ -15,12 +15,12 @@ end note
 mobsdk-->mobapp: Status OK, populated <usersList>
 mobapp->rpa: GET /authzurl
 rpa-->mobapp: OK, data: { authorizeURL }
-mobapp->mobsdk: getAccessCode(<authorizeURL>, &accessCode)
+mobapp->mobsdk: [MPinMFA GetAccessCode:<authzUrl> accessCode:&accessCode]
 mobsdk-->mobapp: Status OK, populated <accessCode>
-mobapp->mobsdk: startAuthentication(<user>, <accessCode>)
+mobapp->mobsdk: [MPinMFA StartAuthentication:<user> accessCode:<accessCode>] 
 mobsdk-->mobapp: Status OK
 mobapp->mobapp: Get PIN from end-user
-mobapp->mobsdk: finishAuthentication(<user>, <PIN>, <accessCode>, &authzCode)
+mobapp->mobsdk: [MPinMFA FinishAuthentication: <user> pin: <pin> pin1: <pin1> accessCode: <accessCode> authzCode: &authzCode]
 mobsdk-->mobapp: Status OK, populated <authzCode>
 mobapp->rpa: App-sepcific request for data or for authentication validation, pass <userId>, <authzCode>
 rpa-->mobapp: App-specific response, pass back either\nAccess Token or app-specific Authentication Token
