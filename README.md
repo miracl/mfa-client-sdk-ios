@@ -108,6 +108,8 @@ Therefore, same identity might be registered for two different customers, and tw
 When checking whether the user exists, one should specify also the `customerId`.
 The `appId` parameter is for future use and should be passed as an empty string.
 
+##### `(id<IUser>) getIUserById:(NSString *) userId;`
+This method returns an IUser object for the provided unique identity name string if any. If nil or an empty string is passed as a parameter, nil will be returned.
 
 ##### `(void) DeleteUser: (const id<IUser>) user;`
 This method deletes a user from the users list that the SDK maintains.
@@ -301,7 +303,7 @@ The `RegCode` class is basically identical to the `OTP` class, and looks like th
 The method allows passing additional authentication factor to the SDK, as `pin1`.
 If not needed, `pin1` should be `nil`.
 
-##### `(MpinStatus*) StartRegistrationDVS: (const id<IUser>) user token: (NSString*) token;`
+##### `(MpinStatus*) StartRegistrationDVS: (const id<IUser>) user pin0:(NSString *) pin0 pin1:(NSString *) pin1;`
 This method starts the user registration for the _DVS (Designated Verifier Signature)_ functionality.
 
 The DVS functionality allows a customer application to verify signatures of documents/transactions, signed by the end-user.
@@ -309,8 +311,8 @@ The DVS functionality allows a customer application to verify signatures of docu
 It is a separate process than the registration for authentication, while a user should be authenticated in order to register for DVS.
 This separate process allows users to register for DVS only if they want/need to, and also to select a different PIN/secret for signing documents.
 
-The expected `token` is the _Access Token_ issued for the user during the _Open ID Connect Authentication Process_.
-This `token` has to be passed from the Relying Party Backend to the Mobile App in a way that is outside the scope of this Mobile SDK.
+The expected `pin0` is the first authentication factor.
+An additional authentication factor can be passed as `pin1`. If not needed, `pin1` should be `nil`.
 
 ##### `(MpinStatus*) FinishRegistrationDVS: (const id<IUser>) user pinDVS: (NSString*) pinDVS nfc: (NSString*) nfc;`
 This method finalizes the user registration process for the DVS functionality.
