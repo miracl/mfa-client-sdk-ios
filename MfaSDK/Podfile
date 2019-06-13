@@ -1,0 +1,5 @@
+platform :ios, '12.0'
+
+target 'MfaSdk' do
+  pod 'MpinCoreLib', :podspec => 'https://github.com/miracl/mfa-client-sdk-ios/releases/download/1.0.0/MpinCoreLib.podspec'
+end
