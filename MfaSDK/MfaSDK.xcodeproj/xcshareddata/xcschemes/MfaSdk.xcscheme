@@ -14,16 +14,16 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "FE49FF971A1A3C2D000030A4"
-               BuildableName = "libMfaSDK.a"
-               BlueprintName = "MfaSDK"
+               BlueprintIdentifier = "B0286F9622B16414002F9DFC"
+               BuildableName = "MfaSdk.framework"
+               BlueprintName = "MfaSdk"
                ReferencedContainer = "container:MfaSDK.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
-      buildConfiguration = "Debug"
+      buildConfiguration = "Prod"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
@@ -33,7 +33,7 @@
       </AdditionalOptions>
    </TestAction>
    <LaunchAction
-      buildConfiguration = "Debug"
+      buildConfiguration = "Prod"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "FE49FF971A1A3C2D000030A4"
-            BuildableName = "libMfaSDK.a"
-            BlueprintName = "MfaSDK"
+            BlueprintIdentifier = "B0286F9622B16414002F9DFC"
+            BuildableName = "MfaSdk.framework"
+            BlueprintName = "MfaSdk"
             ReferencedContainer = "container:MfaSDK.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -55,7 +55,7 @@
       </AdditionalOptions>
    </LaunchAction>
    <ProfileAction
-      buildConfiguration = "Debug"
+      buildConfiguration = "Prod"
       shouldUseLaunchSchemeArgsEnv = "YES"
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
@@ -63,15 +63,15 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "FE49FF971A1A3C2D000030A4"
-            BuildableName = "libMfaSDK.a"
-            BlueprintName = "MfaSDK"
+            BlueprintIdentifier = "B0286F9622B16414002F9DFC"
+            BuildableName = "MfaSdk.framework"
+            BlueprintName = "MfaSdk"
             ReferencedContainer = "container:MfaSDK.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
-      buildConfiguration = "Debug">
+      buildConfiguration = "Prod">
    </AnalyzeAction>
    <ArchiveAction
       buildConfiguration = "Debug"

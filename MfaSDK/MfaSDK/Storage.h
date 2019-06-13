@@ -1,5 +1,6 @@
 #ifndef STORAGE_H_
 #define STORAGE_H_
+#import <Foundation/Foundation.h>
 
 #include "def.h"
 

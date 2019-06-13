@@ -14,16 +14,16 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B02196C9226DCEC200BF3A71"
-               BuildableName = "MpinSdk.framework"
-               BlueprintName = "MpinSdk"
-               ReferencedContainer = "container:MPinSDK.xcodeproj">
+               BlueprintIdentifier = "B0A12F3D22B25CA200C66308"
+               BuildableName = "MfaSdkAggregate"
+               BlueprintName = "MfaSdkAggregate"
+               ReferencedContainer = "container:MfaSDK.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
-      buildConfiguration = "Debug"
+      buildConfiguration = "Prod"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
@@ -33,7 +33,7 @@
       </AdditionalOptions>
    </TestAction>
    <LaunchAction
-      buildConfiguration = "Debug"
+      buildConfiguration = "Prod"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
@@ -45,17 +45,17 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B02196C9226DCEC200BF3A71"
-            BuildableName = "MpinSdk.framework"
-            BlueprintName = "MpinSdk"
-            ReferencedContainer = "container:MPinSDK.xcodeproj">
+            BlueprintIdentifier = "B0A12F3D22B25CA200C66308"
+            BuildableName = "MfaSdkAggregate"
+            BlueprintName = "MfaSdkAggregate"
+            ReferencedContainer = "container:MfaSDK.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
    <ProfileAction
-      buildConfiguration = "Debug"
+      buildConfiguration = "Prod"
       shouldUseLaunchSchemeArgsEnv = "YES"
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
@@ -63,18 +63,18 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B02196C9226DCEC200BF3A71"
-            BuildableName = "MpinSdk.framework"
-            BlueprintName = "MpinSdk"
-            ReferencedContainer = "container:MPinSDK.xcodeproj">
+            BlueprintIdentifier = "B0A12F3D22B25CA200C66308"
+            BuildableName = "MfaSdkAggregate"
+            BlueprintName = "MfaSdkAggregate"
+            ReferencedContainer = "container:MfaSDK.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
-      buildConfiguration = "Debug">
+      buildConfiguration = "Prod">
    </AnalyzeAction>
    <ArchiveAction
-      buildConfiguration = "Debug"
+      buildConfiguration = "Prod"
       revealArchiveInOrganizer = "YES">
    </ArchiveAction>
 </Scheme>

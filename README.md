@@ -9,13 +9,23 @@
 
 ### Building the MFA Mobile SDK
 
-1. Navigate to `<mfa-client-sdk-ios>`
-2. Open `MfaSDK/MfaSDK.xcodeproj`
-3. Select *Product->Build* from the Xcode menu.
+1. Navigate to `<mfa-client-sdk-ios>/MfaSDK`
+2. Execute `pod install`
+3. Open the `MfaSDK.xcworkspace`
+4. Select `MfaSdk` build scheme from the top bar where the build schemes are listed
+5. Select *Product->Build* from the Xcode menu.
+
+There is also another build target named `MfaSdkAggregate`. It will build a version of the SDK which contains all architectures. This target is meant to be built only when a cocoapods release of the SDK is made. To build a release version of the SDK follow these steps:
+
+1. Navigate to `<mfa-client-sdk-ios>/MfaSDK`
+2. Execute `pod install`
+3. Open the `MfaSDK.xcworkspace`
+4. Select `MfaSdkAggregate` build scheme from the top bar where the build schemes are listed
+5. Select *Product->Build* from the Xcode menu.
+
+The generated `.framework` file can be found by navigating within the `Project Navigator in Xcode` to `MfaSDK->Products->Right click on MfaSdk.framework->Show in finder`. In the `Finder` window you will find the `MfaSdk.framework` in the `Prod-universal` folder.
 
 For further details, see [MIRACL MFA Mobile SDK for iOS Documentation](https://devdocs.trust.miracl.cloud/mobile-sdk-instructions/)
-
-
 
 ## iOS SDK API for MIRACL MFA (`MPinMFA`)
 
