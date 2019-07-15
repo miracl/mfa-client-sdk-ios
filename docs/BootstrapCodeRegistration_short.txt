@@ -1,0 +1,20 @@
+title Bootstrap Code Registration
+participant Mobile App as mobapp
+participant Mobile SDK as mobsdk
+note over mobapp
+  User initiates bootstrap registration
+end note
+mobapp->mobsdk: [MPinMFA GetAccessCode:<authorizeUrl> accessCode:&accessCode]
+mobsdk-->mobapp: Status OK, populated <accessCode>
+mobapp->mobsdk: [MPinMFA StartRegistration:<user> accessCode:<accessCode> regCode:&bootstrapCode pmi:<pmi>]
+mobsdk-->mobapp: Status OK
+mobapp->mobsdk: [MPinMFA ConfirmRegistration:<user>]
+mobsdk-->mobapp: Status OK
+note over mobapp
+  Ask for PIN
+end note
+mobapp->mobsdk:  [MPinMFA FinishRegistration:<user> pin0:<pin> pin1:<pin1>]
+mobsdk-->mobapp: Status OK
+note over mobapp
+  Bootstrap code registration done
+end note
