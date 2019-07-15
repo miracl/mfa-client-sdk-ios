@@ -1,0 +1,14 @@
+title Bootstrap Code Generation
+participant Mobile App as mobapp
+participant Mobile SDK as mobsdk
+note over mobapp
+  User initiates bootstrap code generation
+end note
+mobapp->mobsdk: [MPinMFA StartAuthenticationRegCode:<user>]
+mobsdk-->mobapp: Status OK
+mobapp->mobapp: Get PIN from end-user
+mobapp->mobsdk: [MPinMFA FinishAuthenticationRegCode:<user> pin:<pin> pin1:<nil> regCode:<bootstrapCode>]
+mobsdk-->mobapp: OK, bootstrapCode
+note over mobapp
+  User registers with the bootsrap code on another device
+end note
