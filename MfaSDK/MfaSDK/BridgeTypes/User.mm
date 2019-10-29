@@ -1,10 +1,5 @@
 #import "User.h"
 
-NSString *const VERIFICATION_TYPE_EMAIL = @"em";
-NSString *const VERIFICATION_TYPE_CUSTOM = @"pv";
-NSString *const VERIFICATION_TYPE_REG_CODE = @"rc";
-NSString *const VERIFICATION_TYPE_DVS_REG_TOKEN = @"dvs";
-
 @interface User() {
     UserPtr userPtr;
 }

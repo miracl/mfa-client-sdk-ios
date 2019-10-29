@@ -72,6 +72,8 @@
         case REGISTRATION_EXPIRED:
             result = @"REGISTRATION_EXPIRED";
             break;
+        case VERIFICATION_FAILED:
+            result = @"VERIFICATION_FAILED";
         default:
             break;
     }

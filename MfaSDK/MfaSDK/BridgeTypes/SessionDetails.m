@@ -9,6 +9,8 @@
    customerName:(NSString *) customerName
 customerIconUrl:(NSString *) customerIconUrl
    registerOnly:(BOOL)registerOnly
+       clientId:(NSString *) clientId
+    redirectURI:(NSURL *)redirectURI
 {
 
     self = [super init];
@@ -20,6 +22,8 @@ customerIconUrl:(NSString *) customerIconUrl
         self.customerName = customerName;
         self.customerIconUrl = customerIconUrl;
         self.registerOnly = registerOnly;
+        self.clientId = clientId;
+        self.redirectURI = redirectURI;
     }
     return self;
 }

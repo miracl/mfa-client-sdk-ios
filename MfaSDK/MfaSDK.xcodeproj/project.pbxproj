@@ -21,7 +21,9 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		224D169D63120F1C8A22732F /* libPods-MfaSdk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F8B963A686B053C7AF4B15F6 /* libPods-MfaSdk.a */; };
+		683C48454A356093619B182B /* libPods-MfaSdk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D5A836E925FBC4FCBB13DB6 /* libPods-MfaSdk.a */; };
+		6D91E4972371A7B10035382E /* VerificationResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D91E4952371A7B10035382E /* VerificationResult.h */; };
+		6D91E4982371A7B10035382E /* VerificationResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D91E4962371A7B10035382E /* VerificationResult.m */; };
 		B00C62DD22B7ED0800E38F5F /* Exceptions.h in Headers */ = {isa = PBXBuildFile; fileRef = B00C62D922B7ED0800E38F5F /* Exceptions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B00C62DE22B7ED0800E38F5F /* def.h in Headers */ = {isa = PBXBuildFile; fileRef = B00C62DA22B7ED0800E38F5F /* def.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B00C62DF22B7ED0800E38F5F /* Context.h in Headers */ = {isa = PBXBuildFile; fileRef = B00C62DB22B7ED0800E38F5F /* Context.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -61,7 +63,9 @@
 /* Begin PBXFileReference section */
 		3988A7771FB1EE6400C5715C /* BridgeSignature.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgeSignature.h; sourceTree = "<group>"; };
 		3988A7781FB1EE6400C5715C /* BridgeSignature.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BridgeSignature.m; sourceTree = "<group>"; };
-		4340A7BE365C8FF6827B919E /* Pods-MfaSdk.prod.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MfaSdk.prod.xcconfig"; path = "Pods/Target Support Files/Pods-MfaSdk/Pods-MfaSdk.prod.xcconfig"; sourceTree = "<group>"; };
+		6D91E4952371A7B10035382E /* VerificationResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VerificationResult.h; sourceTree = "<group>"; };
+		6D91E4962371A7B10035382E /* VerificationResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VerificationResult.m; sourceTree = "<group>"; };
+		8D5A836E925FBC4FCBB13DB6 /* libPods-MfaSdk.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MfaSdk.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9609CB961FDA9B1600528A50 /* MultiFactor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MultiFactor.h; sourceTree = "<group>"; };
 		9609CB971FDA9B1600528A50 /* MultiFactor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MultiFactor.m; sourceTree = "<group>"; };
 		9609CB991FDAC5E400528A50 /* ServiceDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServiceDetails.m; sourceTree = "<group>"; };
@@ -69,7 +73,7 @@
 		968EADF220B40678001094AD /* RegCode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegCode.m; sourceTree = "<group>"; };
 		96F56EFE2046C0E6009AABC7 /* Expiration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Expiration.h; sourceTree = "<group>"; };
 		96F56EFF2046C0E6009AABC7 /* Expiration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Expiration.m; sourceTree = "<group>"; };
-		AC3AA42ADB5C07652853DE11 /* Pods-MfaSDK.prod.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MfaSDK.prod.xcconfig"; path = "Pods/Target Support Files/Pods-MfaSDK/Pods-MfaSDK.prod.xcconfig"; sourceTree = "<group>"; };
+		A9B93741D42514A3E4DD5600 /* Pods-MfaSdk.prod.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MfaSdk.prod.xcconfig"; path = "Target Support Files/Pods-MfaSdk/Pods-MfaSdk.prod.xcconfig"; sourceTree = "<group>"; };
 		B00C62D922B7ED0800E38F5F /* Exceptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Exceptions.h; sourceTree = "<group>"; };
 		B00C62DA22B7ED0800E38F5F /* def.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = def.h; sourceTree = "<group>"; };
 		B00C62DB22B7ED0800E38F5F /* Context.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Context.h; sourceTree = "<group>"; };
@@ -85,7 +89,6 @@
 		B0A0BF8E224DF09300A069A3 /* CvString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CvString.h; sourceTree = "<group>"; };
 		B0A0BF8F224DF09300A069A3 /* CvXcode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CvXcode.h; sourceTree = "<group>"; };
 		B0A0BF92224DF0EF00A069A3 /* CvCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CvCommon.h; sourceTree = "<group>"; };
-		F8B963A686B053C7AF4B15F6 /* libPods-MfaSdk.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MfaSdk.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE49FF9B1A1A3C2D000030A4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FE49FF9F1A1A3C2D000030A4 /* MfaSDK-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MfaSDK-Prefix.pch"; sourceTree = "<group>"; };
 		FE55B5411DF839E600D3D69F /* ServiceDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceDetails.h; sourceTree = "<group>"; };
@@ -108,7 +111,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B0A12F3122B1651400C66308 /* Foundation.framework in Frameworks */,
-				224D169D63120F1C8A22732F /* libPods-MfaSdk.a in Frameworks */,
+				683C48454A356093619B182B /* libPods-MfaSdk.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,6 +121,8 @@
 		3988A7761FB1ED9A00C5715C /* BridgeTypes */ = {
 			isa = PBXGroup;
 			children = (
+				6D91E4952371A7B10035382E /* VerificationResult.h */,
+				6D91E4962371A7B10035382E /* VerificationResult.m */,
 				96F56EFE2046C0E6009AABC7 /* Expiration.h */,
 				96F56EFF2046C0E6009AABC7 /* Expiration.m */,
 				FE991EFE1C5F66540014F23E /* MpinStatus.h */,
@@ -141,13 +146,12 @@
 			path = BridgeTypes;
 			sourceTree = "<group>";
 		};
-		B8E6F0006A511C253BA9004B /* Pods */ = {
+		EBC1184975009B2DD307F40D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				AC3AA42ADB5C07652853DE11 /* Pods-MfaSDK.prod.xcconfig */,
-				4340A7BE365C8FF6827B919E /* Pods-MfaSdk.prod.xcconfig */,
+				A9B93741D42514A3E4DD5600 /* Pods-MfaSdk.prod.xcconfig */,
 			);
-			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 		FE49FF8F1A1A3C2D000030A4 = {
@@ -156,7 +160,7 @@
 				FE49FF9D1A1A3C2D000030A4 /* MfaSDK */,
 				FE49FF9A1A1A3C2D000030A4 /* Frameworks */,
 				FE49FF991A1A3C2D000030A4 /* Products */,
-				B8E6F0006A511C253BA9004B /* Pods */,
+				EBC1184975009B2DD307F40D /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -172,7 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				FE49FF9B1A1A3C2D000030A4 /* Foundation.framework */,
-				F8B963A686B053C7AF4B15F6 /* libPods-MfaSdk.a */,
+				8D5A836E925FBC4FCBB13DB6 /* libPods-MfaSdk.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -229,6 +233,7 @@
 				B0286FBA22B1644B002F9DFC /* RegCode.h in Headers */,
 				B00C62DF22B7ED0800E38F5F /* Context.h in Headers */,
 				B00C62E622B7ED1F00E38F5F /* MPinMFA.h in Headers */,
+				6D91E4972371A7B10035382E /* VerificationResult.h in Headers */,
 				B00C62DE22B7ED0800E38F5F /* def.h in Headers */,
 				B00C62DD22B7ED0800E38F5F /* Exceptions.h in Headers */,
 				B00C62E722B7ED1F00E38F5F /* HTTPConnector.h in Headers */,
@@ -246,7 +251,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B0286F9C22B16414002F9DFC /* Build configuration list for PBXNativeTarget "MfaSdk" */;
 			buildPhases = (
-				B1870845DB23CB085EE05ED0 /* [CP] Check Pods Manifest.lock */,
+				3702034D9743FFDDD3604ABC /* [CP] Check Pods Manifest.lock */,
 				B0286F9222B16414002F9DFC /* Headers */,
 				B0286F9322B16414002F9DFC /* Sources */,
 				B0286F9422B16414002F9DFC /* Frameworks */,
@@ -311,24 +316,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		B0A12F4622B25CAC00C66308 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# define output folder environment variable\nUNIVERSAL_OUTPUTFOLDER=${BUILD_DIR}/${CONFIGURATION}-universal\nMFASDK=\"MfaSdk\"\nOBJROOT=\"${OBJROOT}/DependentBuilds\"\n\n# Build Device and Simulator versions of the ${MFASDK}\nxcodebuild -workspace \"MfaSDK.xcworkspace\" -scheme ${MFASDK} ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphoneos OBJROOT=\"${OBJROOT}\" BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\"\nxcodebuild -workspace \"MfaSDK.xcworkspace\" -scheme ${MFASDK} ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphonesimulator -arch x86_64 OBJROOT=\"${OBJROOT}\" BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\"\n\n# make sure the output directory exists\nmkdir -p \"${UNIVERSAL_OUTPUTFOLDER}/${MFASDK}.framework\"\n\n# Create universal binary file using lipo\nlipo -create -output \"${UNIVERSAL_OUTPUTFOLDER}/${MFASDK}.framework/${MFASDK}\" \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${MFASDK}.framework/${MFASDK}\" \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${MFASDK}.framework/${MFASDK}\"\n\n# Copy header files\ncp -R \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${MFASDK}.framework/Headers\" \"${UNIVERSAL_OUTPUTFOLDER}/${MFASDK}.framework\"\ncp -R \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${MFASDK}.framework/Info.plist\" \"${UNIVERSAL_OUTPUTFOLDER}/${MFASDK}.framework\"\n";
-		};
-		B1870845DB23CB085EE05ED0 /* [CP] Check Pods Manifest.lock */ = {
+		3702034D9743FFDDD3604ABC /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -350,6 +338,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		B0A12F4622B25CAC00C66308 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# define output folder environment variable\nUNIVERSAL_OUTPUTFOLDER=${BUILD_DIR}/${CONFIGURATION}-universal\nMFASDK=\"MfaSdk\"\nOBJROOT=\"${OBJROOT}/DependentBuilds\"\n\n# Build Device and Simulator versions of the ${MFASDK}\nxcodebuild -workspace \"MfaSDK.xcworkspace\" -scheme ${MFASDK} ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphoneos OBJROOT=\"${OBJROOT}\" BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\"\nxcodebuild -workspace \"MfaSDK.xcworkspace\" -scheme ${MFASDK} ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphonesimulator -arch x86_64 OBJROOT=\"${OBJROOT}\" BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\"\n\n# make sure the output directory exists\nmkdir -p \"${UNIVERSAL_OUTPUTFOLDER}/${MFASDK}.framework\"\n\n# Create universal binary file using lipo\nlipo -create -output \"${UNIVERSAL_OUTPUTFOLDER}/${MFASDK}.framework/${MFASDK}\" \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${MFASDK}.framework/${MFASDK}\" \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${MFASDK}.framework/${MFASDK}\"\n\n# Copy header files\ncp -R \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${MFASDK}.framework/Headers\" \"${UNIVERSAL_OUTPUTFOLDER}/${MFASDK}.framework\"\ncp -R \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${MFASDK}.framework/Info.plist\" \"${UNIVERSAL_OUTPUTFOLDER}/${MFASDK}.framework\"\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -364,6 +369,7 @@
 				B00C62E522B7ED1F00E38F5F /* MPinMFA.mm in Sources */,
 				B072D9DC22BCF4D800E9F4FA /* Context.mm in Sources */,
 				B00C62E422B7ED1F00E38F5F /* HTTPConnector.mm in Sources */,
+				6D91E4982371A7B10035382E /* VerificationResult.m in Sources */,
 				B0286FA722B1642E002F9DFC /* ServiceDetails.m in Sources */,
 				B0286FA822B1642E002F9DFC /* OTP.m in Sources */,
 				B0286FA922B1642E002F9DFC /* User.mm in Sources */,
@@ -427,7 +433,7 @@
 		};
 		B0286FA122B16414002F9DFC /* Prod */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4340A7BE365C8FF6827B919E /* Pods-MfaSdk.prod.xcconfig */;
+			baseConfigurationReference = A9B93741D42514A3E4DD5600 /* Pods-MfaSdk.prod.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
