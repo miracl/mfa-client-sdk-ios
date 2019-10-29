@@ -35,10 +35,10 @@ Most of the methods return a `MpinStatus` object as status `OK` means it passed 
 
 Many methods expect the provided `user` object to be in a certain state, and if it is not, the method will return status `FLOW_ERROR`
 
-##### `(void) initSDK;`
+##### `(MpinStatus *) initSDK;`
 This method constructs/initializes the SDK object.
 
-##### `(void) initSDKWithHeaders: (NSDictionary*) dictHeaders;`
+##### `(MpinStatus *) initSDKWithHeaders: (NSDictionary*) dictHeaders;`
 This method constructs/initializes the SDK object.
 The `dictHeaders` parameter allows the caller to pass additional dictionary of custom headers, which will be added to any HTTP request that the SDK executes.
 
@@ -191,17 +191,41 @@ When the mobile app has the Authorization URL, it can pass it to this method as 
 Note that the Authorization URL contains a parameter that identifies the app.
 This parameter is validated by the Platform and it should correspond to the Customer ID, set via `SetClientId`.
 
+##### `+(MpinStatus *) StartVerification:(const id<IUser>)user clientId:(NSString *)clientId redirectURI:(NSURL *)redirectURI accessCode:(NSString *)accessCode;`
+This method initializes the default user identity verification process. A verification means confirming that user identity is owned by the user itself.
+The default user identity verification in the _MIRACL MFA Platform_ sends an email message that contains confirmation URL. When clicked it opens the authentication application (Universal link entitlement must be obtained from Apple) and [`FinishVerification`] should be called to finalize the verification. Note that the identity is created on the device where the email URL is opened.
+
+The SDK sends the necessary requests to the back-end service.
+The State of the User instance will change to `STARTED_VERIFICATION`.
+The status will indicate whether the operation is successful or not.
+
+##### `+(MpinStatus *) FinishVerification:(const id<IUser>)user verificationCode:(NSString *)code verificationResult:(VerificationResult **)verificationResult;`
+This method is used to finalize the process of the default user identity verification.
+The `verificationCode` has to be obtained from the verification URL received in the confirmation email as a query parameter.
+
+The `VerificationResult` class returned as a reference variable has the following form:
+
+```
+@property (nonatomic, strong) NSString *activationToken;
+@property (nonatomic, strong) NSString *accessCode;
+```
+
+The `accessCode` is a session identifier which you could control the session with by [`AbortSession`], [`GetSessionDetails`]. 
+The `activationToken` is a code which indicates that the user identity is already verified and is used to start the identity registration.
+
+
 ##### `(MpinStatus*) StartRegistration: (const id<IUser>) user accessCode: (NSString*) accessCode pmi: (NSString*) pmi;`
 ##### `(MpinStatus*) StartRegistration: (const id<IUser>) user accessCode: (NSString*) accessCode regCode: (NSString*) regCode pmi: (NSString*) pmi;`
-This method initializes the registration for a User that has already been created.
+This method initializes the registration for a User that has already been verified.
 The SDK starts the Setup flow, sending the necessary requests to the back-end service.
 The State of the User instance will change to `STARTED_REGISTRATION`.
 The status will indicate whether the operation was successful or not.
 During this call, an _M-Pin ID_ for the end-user will be issued by the Platform and stored within the user object.
-The Platform will also start a user identity verification procedure, by sending a verification e-mail.
 
 The `accessCode` should be obtained from a browser session, and session details are retrieved before starting the registration.
 This way the mobile app can show to the end-user the respective details for the customer, which the identity is going to be associated to.
+
+The `regCode` is a code which value indicates that the user identity is already verified. It could be obtained as `activationToken` value of `VerificationResult` object from a successfull call to `TODO:#FinishVerification:` method using the default identity verification or using a bootstrap code. 
 
 ##### `(MpinStatus*) RestartRegistration: (const id<IUser>) user;`
 This method re-initializes the registration process for a user, where registration has already started.

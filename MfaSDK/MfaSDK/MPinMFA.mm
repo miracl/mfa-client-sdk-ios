@@ -16,21 +16,27 @@ typedef MfaSDK::Signature       Signature;
 
 @implementation MPinMFA
 
-+ (void) initSDK {
-    if (isInitialized) return;
++ (MpinStatus *) initSDK {
+    if (isInitialized){
+        return nil;
+    }
     [lock lock];
-    mpin.Init(StringMap(), sdk_non_tee::Context::Instance());
+    Status s = mpin.Init(StringMap(), sdk_non_tee::Context::Instance());
     isInitialized = true;
     [lock unlock];
+    return [[MpinStatus alloc] initWith:(MPinStatus)s.GetStatusCode() errorMessage:[NSString stringWithUTF8String:s.GetErrorMessage().c_str()]];
 }
 
-+ (void) initSDKWithHeaders:(NSDictionary *)dictHeaders{
-    if (isInitialized) return;
++ (MpinStatus *) initSDKWithHeaders:(NSDictionary *)dictHeaders{
+    if (isInitialized){
+        return nil;
+    }
     [lock lock];
-    mpin.Init(StringMap(), sdk_non_tee::Context::Instance());
+    Status s = mpin.Init(StringMap(), sdk_non_tee::Context::Instance());
     isInitialized = true;
     [lock unlock];
     [MPinMFA AddCustomHeaders:dictHeaders];
+    return [[MpinStatus alloc] initWith:(MPinStatus)s.GetStatusCode() errorMessage:[NSString stringWithUTF8String:s.GetErrorMessage().c_str()]];
 }
 
 + (void) Destroy {
@@ -182,6 +188,8 @@ typedef MfaSDK::Signature       Signature;
     if (s.GetStatusCode() != Status::Code::OK)
         return nil;
     
+    NSURL *redirectURI = [NSURL URLWithString: [NSString stringWithUTF8String:sd.redirectURI.c_str()]];
+    
     return  [[SessionDetails alloc] initWith:[NSString stringWithUTF8String:sd.prerollId.c_str()]
                                      appName:[NSString stringWithUTF8String:sd.appName.c_str()]
                                   appIconUrl:[NSString stringWithUTF8String:sd.appIconUrl.c_str()]
@@ -189,7 +197,8 @@ typedef MfaSDK::Signature       Signature;
                                 customerName:[NSString stringWithUTF8String:sd.customerName.c_str()]
                              customerIconUrl:[NSString stringWithUTF8String:sd.customerIconUrl.c_str()]
                                 registerOnly:sd.registerOnly
-             ];
+                                    clientId:[NSString stringWithUTF8String:sd.clientId.c_str()]
+                                 redirectURI:redirectURI];
 }
 
 + (MpinStatus*) AbortSession:(NSString *) accessCode {
@@ -206,6 +215,33 @@ typedef MfaSDK::Signature       Signature;
     [lock unlock];
     *ac = [NSString stringWithUTF8String:c_ac.c_str()];
     return [[MpinStatus alloc] initWith:(MPinStatus)s.GetStatusCode() errorMessage:[NSString stringWithUTF8String:s.GetErrorMessage().c_str()]];
+}
+
++(MpinStatus *) StartVerification:(const id<IUser>)user clientId:(NSString *)clientId redirectURI:(NSURL *)redirectURI accessCode:(NSString *)accessCode
+{
+    [lock lock];
+    Status s = mpin.StartVerification([(User *)user getUserPtr],
+                                      [clientId UTF8String],
+                                      [redirectURI.absoluteString UTF8String],
+                                      [accessCode UTF8String]);
+    [lock unlock];
+    return [[MpinStatus alloc] initWith:(MPinStatus)s.GetStatusCode()
+                           errorMessage:[NSString stringWithUTF8String:s.GetErrorMessage().c_str()]];
+}
+
++(MpinStatus *) FinishVerification:(const id<IUser>)user verificationCode:(NSString *)code verificationResult:(VerificationResult **)verificationResult
+{
+    [lock lock];
+    
+    MfaSDK::VerificationResult coreVerificationResult;
+    Status s = mpin.FinishVerification([(User *)user getUserPtr], [code UTF8String], coreVerificationResult);
+    
+    *verificationResult = [[VerificationResult alloc] initWithActivationToken:[NSString stringWithUTF8String:coreVerificationResult.activationToken.c_str()]
+                                                               andAccessCode:[NSString stringWithUTF8String:coreVerificationResult.accessId.c_str()]];
+    
+    [lock unlock];
+    return [[MpinStatus alloc] initWith:(MPinStatus)s.GetStatusCode()
+                           errorMessage:[NSString stringWithUTF8String:s.GetErrorMessage().c_str()]];
 }
 
 + (MpinStatus*) StartRegistration:(const id<IUser>)user accessCode:(NSString *) accessCode pmi:(NSString *) pmi {

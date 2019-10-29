@@ -8,6 +8,8 @@
 @property (nonatomic, retain) NSString * customerName;
 @property (nonatomic, retain) NSString * customerIconUrl;
 @property (nonatomic)         BOOL       registerOnly;
+@property (nonatomic, retain) NSString * clientId;
+@property (nonatomic, retain) NSURL *redirectURI;
 
 - (id) initWith:(NSString * ) prerollId
         appName:(NSString *) appName
@@ -15,6 +17,8 @@
      customerId:(NSString *) customerId
    customerName:(NSString *) customerName
 customerIconUrl:(NSString *) customerIconUrl
-   registerOnly:(BOOL) registerOnly;
+   registerOnly:(BOOL)registerOnly
+       clientId:(NSString *) clientId
+    redirectURI:(NSURL *)redirectURI;
 
 @end
