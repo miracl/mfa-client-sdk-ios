@@ -193,7 +193,7 @@ This parameter is validated by the Platform and it should correspond to the Cust
 
 ##### `+(MpinStatus *) StartVerification:(const id<IUser>)user clientId:(NSString *)clientId redirectURI:(NSURL *)redirectURI accessCode:(NSString *)accessCode;`
 This method initializes the default user identity verification process. A verification means confirming that user identity is owned by the user itself.
-The default user identity verification in the _MIRACL MFA Platform_ sends an email message that contains confirmation URL. When clicked it opens the authentication application (Universal link entitlement must be obtained from Apple) and [`FinishVerification`] should be called to finalize the verification. Note that the identity is created on the device where the email URL is opened.
+The default user identity verification in the _MIRACL MFA Platform_ sends an email message that contains confirmation URL. When clicked it opens the authentication application (Universal link entitlement must be obtained from Apple) and `FinishVerification` should be called to finalize the verification. Note that the identity is created on the device where the email URL is opened.
 
 The SDK sends the necessary requests to the back-end service.
 The State of the User instance will change to `STARTED_VERIFICATION`.
@@ -210,7 +210,7 @@ The `VerificationResult` class returned as a reference variable has the followin
 @property (nonatomic, strong) NSString *accessCode;
 ```
 
-The `accessCode` is a session identifier which you could control the session with by [`AbortSession`], [`GetSessionDetails`]. 
+The `accessCode` is a session identifier which you could control the session with by `AbortSession`, `GetSessionDetails`. 
 The `activationToken` is a code which indicates that the user identity is already verified and is used to start the identity registration.
 
 
@@ -225,7 +225,7 @@ During this call, an _M-Pin ID_ for the end-user will be issued by the Platform 
 The `accessCode` should be obtained from a browser session, and session details are retrieved before starting the registration.
 This way the mobile app can show to the end-user the respective details for the customer, which the identity is going to be associated to.
 
-The `regCode` is a code which value indicates that the user identity is already verified. It could be obtained as `activationToken` value of `VerificationResult` object from a successfull call to `TODO:#FinishVerification:` method using the default identity verification or using a bootstrap code. 
+The `regCode` is a code which value indicates that the user identity is already verified. It could be obtained as `activationToken` value of `VerificationResult` object from a successfull call to `FinishVerification` method using the default identity verification or using a bootstrap code. 
 
 ##### `(MpinStatus*) RestartRegistration: (const id<IUser>) user;`
 This method re-initializes the registration process for a user, where registration has already started.
@@ -299,7 +299,7 @@ The `OTP` class looks like this:
 @interface OTP : NSObject
 
 @property (nonatomic, retain, readonly) MpinStatus* status;
-@property (nonatomic, retain , readonly) NSString* otp;
+@property (nonatomic, retain, readonly) NSString* otp;
 @property (atomic, readonly) long expireTime;
 @property (atomic, readonly) int ttlSeconds;
 @property (atomic, readonly) long nowTime;
