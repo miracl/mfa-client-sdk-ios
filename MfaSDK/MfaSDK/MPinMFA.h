@@ -48,10 +48,21 @@
 + (MpinStatus*) RestartRegistration:(const id<IUser>)user;
 + (MpinStatus*) SetRegistrationToken:(const id<IUser>)user
                                token:(NSString *) token;
+
++ (MpinStatus*) StartRegistration:(const id<IUser>)user
+                       accessCode:(NSString *) accessCode
+                              pmi:(NSString *) pmi;
+
++ (MpinStatus*) StartRegistration:(const id<IUser>)user
+                       accessCode:(NSString *) accessCode
+                          regCode:(NSString *) regCode
+                              pmi:(NSString *) pmi;
+
 + (MpinStatus*) ConfirmRegistration:(const id<IUser>)user;
 + (MpinStatus*) FinishRegistration:(const id<IUser>)user
                               pin0:(NSString *) pin0
                               pin1:(NSString *) pin1;
+
 + (MpinStatus*) StartAuthentication:(const id<IUser>)user
                          accessCode:(NSString *) accessCode;
 
@@ -66,14 +77,7 @@
                           accessCode:(NSString *)ac
                            authzCode:(NSString **)authzCode;
 
-+ (MpinStatus*) StartRegistration:(const id<IUser>)user
-                       accessCode:(NSString *) accessCode
-                              pmi:(NSString *) pmi;
 
-+ (MpinStatus*) StartRegistration:(const id<IUser>)user
-                       accessCode:(NSString *) accessCode
-                          regCode:(NSString *) regCode
-                              pmi:(NSString *) pmi;
 
 + (MpinStatus*) StartAuthenticationRegCode:(const id<IUser>)user;
 
@@ -109,7 +113,6 @@
 
 +(MpinStatus *) StartVerification:(const id<IUser>)user
                          clientId:(NSString *)clientId
-                      redirectURI:(NSURL *)redirectURI
                        accessCode:(NSString *)accessCode;
 
 +(MpinStatus *) FinishVerification:(const id<IUser>)user

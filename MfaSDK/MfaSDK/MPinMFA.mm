@@ -217,12 +217,11 @@ typedef MfaSDK::Signature       Signature;
     return [[MpinStatus alloc] initWith:(MPinStatus)s.GetStatusCode() errorMessage:[NSString stringWithUTF8String:s.GetErrorMessage().c_str()]];
 }
 
-+(MpinStatus *) StartVerification:(const id<IUser>)user clientId:(NSString *)clientId redirectURI:(NSURL *)redirectURI accessCode:(NSString *)accessCode
++(MpinStatus *) StartVerification:(const id<IUser>)user clientId:(NSString *)clientId accessCode:(NSString *)accessCode
 {
     [lock lock];
     Status s = mpin.StartVerification([(User *)user getUserPtr],
                                       [clientId UTF8String],
-                                      [redirectURI.absoluteString UTF8String],
                                       [accessCode UTF8String]);
     [lock unlock];
     return [[MpinStatus alloc] initWith:(MPinStatus)s.GetStatusCode()
