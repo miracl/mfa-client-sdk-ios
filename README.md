@@ -191,7 +191,7 @@ When the mobile app has the Authorization URL, it can pass it to this method as 
 Note that the Authorization URL contains a parameter that identifies the app.
 This parameter is validated by the Platform and it should correspond to the Customer ID, set via `SetClientId`.
 
-##### `+(MpinStatus *) StartVerification:(const id<IUser>)user clientId:(NSString *)clientId redirectURI:(NSURL *)redirectURI accessCode:(NSString *)accessCode;`
+##### `+(MpinStatus *) StartVerification:(const id<IUser>)user clientId:(NSString *)clientId accessCode:(NSString *)accessCode;`
 This method initializes the default user identity verification process. A verification means confirming that user identity is owned by the user itself.
 The default user identity verification in the _MIRACL MFA Platform_ sends an email message that contains confirmation URL. When clicked it opens the authentication application (Universal link entitlement must be obtained from Apple) and `FinishVerification` should be called to finalize the verification. Note that the identity is created on the device where the email URL is opened.
 
