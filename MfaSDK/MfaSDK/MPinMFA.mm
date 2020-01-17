@@ -234,9 +234,10 @@ typedef MfaSDK::Signature       Signature;
     
     MfaSDK::VerificationResult coreVerificationResult;
     Status s = mpin.FinishVerification([(User *)user getUserPtr], [code UTF8String], coreVerificationResult);
-    
+
     *verificationResult = [[VerificationResult alloc] initWithActivationToken:[NSString stringWithUTF8String:coreVerificationResult.activationToken.c_str()]
-                                                               andAccessCode:[NSString stringWithUTF8String:coreVerificationResult.accessId.c_str()]];
+                                                                   accessCode:[NSString stringWithUTF8String:coreVerificationResult.accessId.c_str()]
+                                                                   expireTime:[NSNumber numberWithLong:coreVerificationResult.expireTime]];
     
     [lock unlock];
     return [[MpinStatus alloc] initWith:(MPinStatus)s.GetStatusCode()

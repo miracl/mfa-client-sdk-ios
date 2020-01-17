@@ -22,7 +22,7 @@
 
 /* Begin PBXBuildFile section */
 		683C48454A356093619B182B /* libPods-MfaSdk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D5A836E925FBC4FCBB13DB6 /* libPods-MfaSdk.a */; };
-		6D91E4972371A7B10035382E /* VerificationResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D91E4952371A7B10035382E /* VerificationResult.h */; };
+		6D91E4972371A7B10035382E /* VerificationResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D91E4952371A7B10035382E /* VerificationResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6D91E4982371A7B10035382E /* VerificationResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D91E4962371A7B10035382E /* VerificationResult.m */; };
 		B00C62DD22B7ED0800E38F5F /* Exceptions.h in Headers */ = {isa = PBXBuildFile; fileRef = B00C62D922B7ED0800E38F5F /* Exceptions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B00C62DE22B7ED0800E38F5F /* def.h in Headers */ = {isa = PBXBuildFile; fileRef = B00C62DA22B7ED0800E38F5F /* def.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -233,13 +233,13 @@
 				B0286FBA22B1644B002F9DFC /* RegCode.h in Headers */,
 				B00C62DF22B7ED0800E38F5F /* Context.h in Headers */,
 				B00C62E622B7ED1F00E38F5F /* MPinMFA.h in Headers */,
-				6D91E4972371A7B10035382E /* VerificationResult.h in Headers */,
 				B00C62DE22B7ED0800E38F5F /* def.h in Headers */,
 				B00C62DD22B7ED0800E38F5F /* Exceptions.h in Headers */,
 				B00C62E722B7ED1F00E38F5F /* HTTPConnector.h in Headers */,
 				B0286FBC22B1644B002F9DFC /* Storage.h in Headers */,
 				B0286FC022B1644B002F9DFC /* CvCommon.h in Headers */,
 				B0286FC222B1644B002F9DFC /* CvString.h in Headers */,
+				6D91E4972371A7B10035382E /* VerificationResult.h in Headers */,
 				B0286FC322B1644B002F9DFC /* CvXcode.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
