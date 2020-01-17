@@ -6,8 +6,10 @@
 
 @property (nonatomic, strong) NSString *activationToken;
 @property (nonatomic, strong) NSString *accessCode;
+@property (nonatomic, strong) NSNumber *expireTime;
 
 -(instancetype) initWithActivationToken:(NSString *)activationToken
-                          andAccessCode:(NSString *)accessCode;
+                             accessCode:(NSString *)accessCode
+                             expireTime:(NSNumber *)expireTime;
 
 @end
