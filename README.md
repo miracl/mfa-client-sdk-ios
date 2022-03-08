@@ -1,6 +1,10 @@
 
 # iOS Mobile SDK for MIRACL MFA Platform 
 
+## This repository is deprecated!
+
+If you are looking to develop a mobile application with MIRACL Trust integration contact support@miracl.com.
+
 ## Building the MFA Mobile SDK for iOS
 
 ### Prerequisites
